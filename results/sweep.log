@@ -1,0 +1,792 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: STUDENT   Host: vlsi80.vce.ac.in   HostID: 7F0100   PID: 15649
+Memory  available: 23.7229 GB  physical: 33.4027 GB
+Linux   : Rocky Linux release 8.10 (Green Obsidian)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2700.0] (  6 ),  1 [2700.0] (  7 ),  2 [2700.0] (  8 )
+                 3 [2700.0] (  9 ),  4 [2700.0] ( 10 ),  5 [2700.0] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 5.1 %, 3.6 %, 3.4 %
+Hyperthreading is enabled
+
+
+Simulating `tb_sweep_tail.scs' on vlsi80.vce.ac.in at 3:58:17 PM, Thur Oct 29, 2026 (process id: 15649).
+Current working directory: /home/STUDENT/Documents/rfc_OTA_Project/netlists
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64 -format  \
+        psfascii tb_sweep_tail.scs -raw ../results/sweep_raw =log  \
+        ../results/sweep.log
+
+Licensing Information:
+[15:58:17.095705] Configured Lic search path (21.01-s002): 5280@cadence
+
+Licensing Information:
+[15:58:18.066305] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/tb_sweep_tail.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/rfc_ota_core.scs
+Time for NDB Parsing: CPU = 40.512 ms, elapsed = 836.34 ms.
+Time accumulated: CPU = 72.271 ms, elapsed = 836.342 ms.
+Peak resident memory used = 144 Mbytes.
+
+Time for Elaboration: CPU = 9.221 ms, elapsed = 9.64403 ms.
+Time accumulated: CPU = 81.53 ms, elapsed = 846.024 ms.
+Peak resident memory used = 153 Mbytes.
+
+
+Time for EDB Visiting: CPU = 484 us, elapsed = 485.897 us.
+Time accumulated: CPU = 82.065 ms, elapsed = 846.561 ms.
+Peak resident memory used = 154 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `vb3_t'.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 27
+            bsim3v3 26    
+            vsource 12    
+
+Analysis and control statement inventory:
+                 dc 1     
+              sweep 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 1.013 ms, elapsed = 8.43 ms.
+Time accumulated: CPU = 83.105 ms, elapsed = 855.018 ms.
+Peak resident memory used = 157 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+***********************************************************
+Sweep Analysis `sweep_vb3': vb3_tail = (650e-03 -> 850e-03)
+***********************************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3_dc_sweep.sweep ...
+
++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 650e-03 (0 %)
++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=0: CPU = 603 us, elapsed = 606.06 us.
+Time accumulated: CPU = 83.752 ms, elapsed = 855.667 ms.
+Peak resident memory used = 157 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-000_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-000_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 965 us, elapsed = 2.37584 ms.
+Total time required for dc analysis `sweep_vb3-000_dc_sweep': CPU = 988 us, elapsed = 2.39897 ms, util. = 41.2%.
+Time accumulated: CPU = 87.215 ms, elapsed = 863.326 ms.
+Peak resident memory used = 158 Mbytes.
+
+
++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 660e-03 (5 %)
++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=1: CPU = 52 us, elapsed = 51.0216 us.
+Time accumulated: CPU = 87.286 ms, elapsed = 863.397 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-001_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-001_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 533 us, elapsed = 1.80411 ms.
+Total time required for dc analysis `sweep_vb3-001_dc_sweep': CPU = 552 us, elapsed = 1.82319 ms, util. = 30.3%.
+Time accumulated: CPU = 88.028 ms, elapsed = 866.835 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 670e-03 (10 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=2: CPU = 37 us, elapsed = 38.147 us.
+Time accumulated: CPU = 88.084 ms, elapsed = 866.891 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-002_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-002_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 556 us, elapsed = 2.01893 ms.
+Total time required for dc analysis `sweep_vb3-002_dc_sweep': CPU = 572 us, elapsed = 2.0349 ms, util. = 28.1%.
+Time accumulated: CPU = 88.759 ms, elapsed = 870.255 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 680e-03 (15 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=3: CPU = 34 us, elapsed = 33.8554 us.
+Time accumulated: CPU = 88.81 ms, elapsed = 870.306 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-003_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-003_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 579 us, elapsed = 1.92118 ms.
+Total time required for dc analysis `sweep_vb3-003_dc_sweep': CPU = 595 us, elapsed = 1.9381 ms, util. = 30.7%.
+Time accumulated: CPU = 89.589 ms, elapsed = 873.709 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 690e-03 (20 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=4: CPU = 33 us, elapsed = 32.9018 us.
+Time accumulated: CPU = 89.639 ms, elapsed = 873.759 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-004_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-004_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 634 us, elapsed = 2.04492 ms.
+Total time required for dc analysis `sweep_vb3-004_dc_sweep': CPU = 650 us, elapsed = 2.06089 ms, util. = 31.5%.
+Time accumulated: CPU = 90.444 ms, elapsed = 877.257 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 700e-03 (25 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=5: CPU = 39 us, elapsed = 38.8622 us.
+Time accumulated: CPU = 90.509 ms, elapsed = 877.322 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-005_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-005_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 565 us, elapsed = 1.67108 ms.
+Total time required for dc analysis `sweep_vb3-005_dc_sweep': CPU = 584 us, elapsed = 1.68777 ms, util. = 34.6%.
+Time accumulated: CPU = 91.229 ms, elapsed = 880.418 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 710e-03 (30 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=6: CPU = 35 us, elapsed = 35.0475 us.
+Time accumulated: CPU = 91.282 ms, elapsed = 880.47 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-006_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-006_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 477 us, elapsed = 1.82605 ms.
+Total time required for dc analysis `sweep_vb3-006_dc_sweep': CPU = 493 us, elapsed = 1.84202 ms, util. = 26.8%.
+Time accumulated: CPU = 91.92 ms, elapsed = 883.769 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 720e-03 (35 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=7: CPU = 37 us, elapsed = 36.9549 us.
+Time accumulated: CPU = 91.975 ms, elapsed = 883.824 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-007_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-007_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 519 us, elapsed = 2.04706 ms.
+Total time required for dc analysis `sweep_vb3-007_dc_sweep': CPU = 537 us, elapsed = 2.06304 ms, util. = 26%.
+Time accumulated: CPU = 92.61 ms, elapsed = 887.282 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 730e-03 (40 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=8: CPU = 33 us, elapsed = 32.9018 us.
+Time accumulated: CPU = 92.66 ms, elapsed = 887.332 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-008_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-008_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 573 us, elapsed = 1.858 ms.
+Total time required for dc analysis `sweep_vb3-008_dc_sweep': CPU = 590 us, elapsed = 1.87302 ms, util. = 31.5%.
+Time accumulated: CPU = 93.433 ms, elapsed = 890.821 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 740e-03 (45 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=9: CPU = 33 us, elapsed = 33.8554 us.
+Time accumulated: CPU = 93.484 ms, elapsed = 890.872 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-009_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-009_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 551 us, elapsed = 1.92714 ms.
+Total time required for dc analysis `sweep_vb3-009_dc_sweep': CPU = 568 us, elapsed = 1.94407 ms, util. = 29.2%.
+Time accumulated: CPU = 94.216 ms, elapsed = 894.312 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 750e-03 (50 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=10: CPU = 75 us, elapsed = 76.0555 us.
+Time accumulated: CPU = 94.326 ms, elapsed = 894.422 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-010_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-010_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 593 us, elapsed = 1.83821 ms.
+Total time required for dc analysis `sweep_vb3-010_dc_sweep': CPU = 615 us, elapsed = 1.85895 ms, util. = 33.1%.
+Time accumulated: CPU = 95.136 ms, elapsed = 897.808 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 760e-03 (55 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=11: CPU = 39 us, elapsed = 39.1006 us.
+Time accumulated: CPU = 95.193 ms, elapsed = 897.865 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-011_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-011_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 535 us, elapsed = 1.88112 ms.
+Total time required for dc analysis `sweep_vb3-011_dc_sweep': CPU = 553 us, elapsed = 1.89805 ms, util. = 29.1%.
+Time accumulated: CPU = 95.93 ms, elapsed = 901.25 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 770e-03 (60 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=12: CPU = 35 us, elapsed = 36.0012 us.
+Time accumulated: CPU = 95.985 ms, elapsed = 901.306 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-012_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-012_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 586 us, elapsed = 1.96409 ms.
+Total time required for dc analysis `sweep_vb3-012_dc_sweep': CPU = 604 us, elapsed = 1.97983 ms, util. = 30.5%.
+Time accumulated: CPU = 96.775 ms, elapsed = 904.755 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 780e-03 (65 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=13: CPU = 32 us, elapsed = 34.0939 us.
+Time accumulated: CPU = 96.825 ms, elapsed = 904.806 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-013_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-013_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 532 us, elapsed = 1.6408 ms.
+Total time required for dc analysis `sweep_vb3-013_dc_sweep': CPU = 549 us, elapsed = 1.65796 ms, util. = 33.1%.
+Time accumulated: CPU = 97.478 ms, elapsed = 907.862 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 790e-03 (70 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=14: CPU = 37 us, elapsed = 36.9549 us.
+Time accumulated: CPU = 97.534 ms, elapsed = 907.918 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-014_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-014_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 623 us, elapsed = 1.94192 ms.
+Total time required for dc analysis `sweep_vb3-014_dc_sweep': CPU = 641 us, elapsed = 1.95909 ms, util. = 32.7%.
+Time accumulated: CPU = 98.309 ms, elapsed = 911.295 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 800e-03 (75 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=15: CPU = 49 us, elapsed = 49.1142 us.
+Time accumulated: CPU = 98.376 ms, elapsed = 911.362 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-015_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-015_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 537 us, elapsed = 1.81603 ms.
+Total time required for dc analysis `sweep_vb3-015_dc_sweep': CPU = 555 us, elapsed = 1.83392 ms, util. = 30.3%.
+Time accumulated: CPU = 99.064 ms, elapsed = 914.715 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 810e-03 (80 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=16: CPU = 61 us, elapsed = 60.0815 us.
+Time accumulated: CPU = 99.147 ms, elapsed = 914.797 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-016_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-016_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 630 us, elapsed = 2.09403 ms.
+Total time required for dc analysis `sweep_vb3-016_dc_sweep': CPU = 652 us, elapsed = 2.11501 ms, util. = 30.8%.
+Time accumulated: CPU = 99.938 ms, elapsed = 918.429 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 820e-03 (85 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=17: CPU = 53 us, elapsed = 52.9289 us.
+Time accumulated: CPU = 100.012 ms, elapsed = 918.503 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-017_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-017_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 540 us, elapsed = 1.86086 ms.
+Total time required for dc analysis `sweep_vb3-017_dc_sweep': CPU = 559 us, elapsed = 1.87993 ms, util. = 29.7%.
+Time accumulated: CPU = 100.724 ms, elapsed = 921.854 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 830e-03 (90 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=18: CPU = 99 us, elapsed = 100.136 us.
+Time accumulated: CPU = 100.851 ms, elapsed = 921.981 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-018_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-018_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 704 us, elapsed = 1.93405 ms.
+Total time required for dc analysis `sweep_vb3-018_dc_sweep': CPU = 732 us, elapsed = 1.96004 ms, util. = 37.3%.
+Time accumulated: CPU = 101.723 ms, elapsed = 925.362 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 840e-03 (95 %)
+++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=19: CPU = 64 us, elapsed = 63.8962 us.
+Time accumulated: CPU = 101.807 ms, elapsed = 925.447 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-019_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-019_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 596 us, elapsed = 1.87612 ms.
+Total time required for dc analysis `sweep_vb3-019_dc_sweep': CPU = 616 us, elapsed = 1.89614 ms, util. = 32.5%.
+Time accumulated: CPU = 102.631 ms, elapsed = 928.87 ms.
+Peak resident memory used = 158 Mbytes.
+
+
++++++++++++++++++++++++++++++++++++++
+sweep_vb3: vb3_tail = 850e-03 (100 %)
++++++++++++++++++++++++++++++++++++++
+Time for sweep_vb3 itNum=20: CPU = 38 us, elapsed = 37.9086 us.
+Time accumulated: CPU = 102.687 ms, elapsed = 928.927 ms.
+Peak resident memory used = 158 Mbytes.
+
+
+************************************
+DC Analysis `sweep_vb3-020_dc_sweep'
+************************************
+
+Opening the PSFASCII file ../results/sweep_raw/sweep_vb3-020_dc_sweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 5.756 uA
+Convergence achieved in 13 iterations.
+DC simulation time: CPU = 644 us, elapsed = 2.01607 ms.
+Total time required for dc analysis `sweep_vb3-020_dc_sweep': CPU = 662 us, elapsed = 2.033 ms, util. = 32.6%.
+Time accumulated: CPU = 103.457 ms, elapsed = 932.437 ms.
+Peak resident memory used = 158 Mbytes.
+
+Total time required for sweep analysis `sweep_vb3': CPU = 20.324 ms, elapsed = 78.577 ms, util. = 25.9%.
+Time accumulated: CPU = 103.617 ms, elapsed = 933.786 ms.
+Peak resident memory used = 158 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[15:58:18.191200] Cdslmd servers:5280@cadence
+[15:58:18.191218] Feature usage summary:
+[15:58:18.191218] Virtuoso_Spectre
+
+
+Aggregate audit (3:58:18 PM, Thur Oct 29, 2026):
+Time used: CPU = 105 ms, elapsed = 936 ms, util. = 11.2%.
+Time spent in licensing: elapsed = 754 ms, percentage of total = 80.5%.
+Peak memory used = 159 Mbytes.
+Simulation started at: 3:58:17 PM, Thur Oct 29, 2026, ended at: 3:58:18 PM, Thur Oct 29, 2026, with elapsed time (wall clock): 936 ms.
+spectre completes with 0 errors, 0 warnings, and 2 notices.

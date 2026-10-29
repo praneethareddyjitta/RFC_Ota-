@@ -1,0 +1,23 @@
+
+simulator lang=spectre
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=NN
+include "rfc_ota_core.scs"
+
+Vdd (vdd 0) vsource dc=1.8
+Vgnd (gnd 0) vsource dc=0
+Vb1 (vb1 0) vsource dc=1.203
+Vb2 (vb2 0) vsource dc=1.273
+Vb3 (vb3 0) vsource dc=0.874
+Vb4 (vb4 0) vsource dc=0.801
+Vb5 (vb5 0) vsource dc=0.752
+VinP (inp 0) vsource dc=0.9
+VinM (inm 0) vsource dc=0.9
+
+// Fix Vout at 0.9V to measure open-loop currents at equilibrium
+VoutP (voutp 0) vsource dc=0.9
+VoutM (voutm 0) vsource dc=0.9
+
+XOTA (inp inm voutp voutm vdd gnd vb1 vb2 vb3 vb4 vb5) rfc_ota
+
+op dc
+save XOTA:currents

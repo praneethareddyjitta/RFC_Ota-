@@ -1,0 +1,135 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: STUDENT   Host: vlsi80.vce.ac.in   HostID: 7F0100   PID: 11995
+Memory  available: 25.3800 GB  physical: 33.4027 GB
+Linux   : Rocky Linux release 8.10 (Green Obsidian)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2700.0] (  6 ),  1 [2700.0] (  7 ),  2 [3848.5] (  8 )
+                 3 [2700.0] (  9 ),  4 [2700.0] ( 10 ),  5 [4127.3] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 4.1 %, 4.1 %, 3.7 %
+Hyperthreading is enabled
+
+
+Simulating `/tmp/test_gpdk.scs' on vlsi80.vce.ac.in at 3:29:42 PM, Thur Oct 29, 2026 (process id: 11995).
+Current working directory: /home/STUDENT/Documents/rfc_OTA_Project
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64  \
+        /tmp/test_gpdk.scs
+
+Licensing Information:
+[15:29:42.095673] Configured Lic search path (21.01-s002): 5280@cadence
+
+Licensing Information:
+[15:29:45.102953] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /tmp/test_gpdk.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Time for NDB Parsing: CPU = 51.238 ms, elapsed = 3.43096 s.
+Time accumulated: CPU = 77.152 ms, elapsed = 3.43096 s.
+Peak resident memory used = 145 Mbytes.
+
+Time for Elaboration: CPU = 8.013 ms, elapsed = 8.23212 ms.
+Time accumulated: CPU = 85.21 ms, elapsed = 3.43924 s.
+Peak resident memory used = 152 Mbytes.
+
+
+Time for EDB Visiting: CPU = 165 us, elapsed = 171.9 us.
+Time accumulated: CPU = 85.442 ms, elapsed = 3.43948 s.
+Peak resident memory used = 153 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `vdd'.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 dc 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 751 us, elapsed = 3.53694 ms.
+Time accumulated: CPU = 86.232 ms, elapsed = 3.44306 s.
+Peak resident memory used = 156 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************
+DC Analysis `op'
+****************
+
+Notice from spectre during DC analysis `op'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file /tmp/test_gpdk.raw/op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vds:p) = 117.9 uA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 758 us, elapsed = 2.01583 ms.
+Total time required for dc analysis `op': CPU = 774 us, elapsed = 2.03204 ms, util. = 38.1%.
+Time accumulated: CPU = 89.324 ms, elapsed = 3.44741 s.
+Peak resident memory used = 158 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[15:29:45.218066] Cdslmd servers:5280@cadence
+[15:29:45.218075] Feature usage summary:
+[15:29:45.218080] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (3:29:45 PM, Thur Oct 29, 2026):
+Time used: CPU = 90.4 ms, elapsed = 3.45 s, util. = 2.62%.
+Time spent in licensing: elapsed = 3.26 s, percentage of total = 94.5%.
+Peak memory used = 159 Mbytes.
+Simulation started at: 3:29:42 PM, Thur Oct 29, 2026, ended at: 3:29:45 PM, Thur Oct 29, 2026, with elapsed time (wall clock): 3.45 s.
+spectre completes with 0 errors, 0 warnings, and 3 notices.

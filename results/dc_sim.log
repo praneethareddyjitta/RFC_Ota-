@@ -1,0 +1,139 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: STUDENT   Host: vlsi80.vce.ac.in   HostID: 7F0100   PID: 12831
+Memory  available: 24.1213 GB  physical: 33.4027 GB
+Linux   : Rocky Linux release 8.10 (Green Obsidian)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2700.0] (  6 ),  1 [2700.0] (  7 ),  2 [2700.0] (  8 )
+                 3 [4264.2] (  9 ),  4 [2700.0] ( 10 ),  5 [2700.0] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 3.3 %, 3.8 %, 3.7 %
+Hyperthreading is enabled
+
+
+Simulating `tb_rfc_ota_dc.scs' on vlsi80.vce.ac.in at 3:46:01 PM, Thur Oct 29, 2026 (process id: 12831).
+Current working directory: /home/STUDENT/Documents/rfc_OTA_Project/netlists
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64  \
+        tb_rfc_ota_dc.scs =log ../results/dc_sim.log
+
+Licensing Information:
+[15:46:01.095625] Configured Lic search path (21.01-s002): 5280@cadence
+
+Licensing Information:
+[15:46:02.360867] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/tb_rfc_ota_dc.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/rfc_ota_core.scs
+Time for NDB Parsing: CPU = 43.114 ms, elapsed = 1.28495 s.
+Time accumulated: CPU = 68.865 ms, elapsed = 1.28495 s.
+Peak resident memory used = 145 Mbytes.
+
+Time for Elaboration: CPU = 10.237 ms, elapsed = 10.272 ms.
+Time accumulated: CPU = 79.153 ms, elapsed = 1.29527 s.
+Peak resident memory used = 154 Mbytes.
+
+
+Time for EDB Visiting: CPU = 540 us, elapsed = 539.064 us.
+Time accumulated: CPU = 79.758 ms, elapsed = 1.29588 s.
+Peak resident memory used = 155 Mbytes.
+
+    WARNING (SPECTRE-8287): Ignoring invalid item `XOTA:all' in save statement.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 26
+            bsim3v3 26    
+          capacitor 2     
+            vsource 9     
+
+Analysis and control statement inventory:
+                 dc 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 1.047 ms, elapsed = 3.59702 ms.
+Time accumulated: CPU = 80.834 ms, elapsed = 1.2995 s.
+Peak resident memory used = 156 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************
+DC Analysis `op'
+****************
+
+Notice from spectre during DC analysis `op'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file ./tb_rfc_ota_dc.raw/op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `op'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vdd:p) = 3.227 uA
+Convergence achieved in 48 iterations.
+DC simulation time: CPU = 1.634 ms, elapsed = 3.02815 ms.
+Total time required for dc analysis `op': CPU = 1.65 ms, elapsed = 3.04103 ms, util. = 54.3%.
+Time accumulated: CPU = 84.814 ms, elapsed = 1.30488 s.
+Peak resident memory used = 160 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[15:46:02.413832] Cdslmd servers:5280@cadence
+[15:46:02.413842] Feature usage summary:
+[15:46:02.413843] Virtuoso_Spectre
+
+
+Aggregate audit (3:46:02 PM, Thur Oct 29, 2026):
+Time used: CPU = 85.5 ms, elapsed = 1.31 s, util. = 6.55%.
+Time spent in licensing: elapsed = 1.19 s, percentage of total = 91.1%.
+Peak memory used = 161 Mbytes.
+Simulation started at: 3:46:01 PM, Thur Oct 29, 2026, ended at: 3:46:02 PM, Thur Oct 29, 2026, with elapsed time (wall clock): 1.31 s.
+spectre completes with 0 errors, 1 warning, and 3 notices.

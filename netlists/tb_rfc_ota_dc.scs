@@ -1,0 +1,32 @@
+// DC Operating Point Testbench for RFC OTA
+simulator lang=spectre
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=NN
+include "rfc_ota_core.scs"
+
+parameters VDD_VAL=1.8 VCM_IN=0.9
+
+// Power Supplies
+Vdd (vdd 0) vsource dc=VDD_VAL
+Vgnd (gnd 0) vsource dc=0
+
+// Bias Voltages (from Table 3 of Paper)
+Vb1 (vb1 0) vsource dc=1.203
+Vb2 (vb2 0) vsource dc=1.273
+Vb3 (vb3 0) vsource dc=0.874
+Vb4 (vb4 0) vsource dc=0.801
+Vb5 (vb5 0) vsource dc=0.752
+
+// Input Common-Mode
+VinP (inp 0) vsource dc=VCM_IN
+VinM (inm 0) vsource dc=VCM_IN
+
+// Device Under Test
+XOTA (inp inm voutp voutm vdd gnd vb1 vb2 vb3 vb4 vb5) rfc_ota
+
+// Output Load Capacitors (1 pF)
+CLp (voutp 0) capacitor c=1.0p
+CLm (voutm 0) capacitor c=1.0p
+
+// DC Operating Point Analysis
+op dc write="spectre.dc"
+save XOTA:all

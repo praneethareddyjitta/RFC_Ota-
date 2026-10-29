@@ -1,0 +1,36 @@
+// AC Open-Loop Frequency Response Testbench for Proposed RFC OTA
+simulator lang=spectre
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=NN
+include "rfc_ota_core.scs"
+
+parameters VDD_VAL=1.8 VCM_IN=0.9 CL_VAL=1.0p
+
+// Power Supplies
+Vdd (vdd 0) vsource dc=VDD_VAL
+Vgnd (gnd 0) vsource dc=0
+
+// Bias Voltages (from Paper Table 3)
+Vb1 (vb1 0) vsource dc=1.203
+Vb2 (vb2 0) vsource dc=1.273
+Vb3 (vb3 0) vsource dc=0.874
+Vb4 (vb4 0) vsource dc=0.801
+Vb5 (vb5 0) vsource dc=0.752
+
+// Differential AC Input Source
+VinCM (vcm 0) vsource dc=VCM_IN
+VinP (inp vcm) vsource dc=0 mag=0.5
+VinM (inm vcm) vsource dc=0 mag=-0.5
+
+// Device Under Test
+XOTA (inp inm voutp voutm vdd gnd vb1 vb2 vb3 vb4 vb5) rfc_ota
+
+// Output Load Capacitors
+CLp (voutp 0) capacitor c=CL_VAL
+CLm (voutm 0) capacitor c=CL_VAL
+
+// Analyses
+op dc
+ac ac start=0.01 stop=100M dec=20
+
+// Save statements
+save voutp voutm inp inm

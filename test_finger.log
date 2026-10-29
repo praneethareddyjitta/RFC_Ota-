@@ -1,0 +1,135 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: STUDENT   Host: vlsi80.vce.ac.in   HostID: 7F0100   PID: 12542
+Memory  available: 24.1890 GB  physical: 33.4027 GB
+Linux   : Rocky Linux release 8.10 (Green Obsidian)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3716.5] (  6 ),  1 [4053.1] (  7 ),  2 [2700.0] (  8 )
+                 3 [2700.0] (  9 ),  4 [2700.0] ( 10 ),  5 [4277.5] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 5.2 %, 4.2 %, 3.8 %
+Hyperthreading is enabled
+
+
+Simulating `/tmp/test_finger.scs' on vlsi80.vce.ac.in at 3:42:11 PM, Thur Oct 29, 2026 (process id: 12542).
+Current working directory: /home/STUDENT/Documents/rfc_OTA_Project
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64  \
+        /tmp/test_finger.scs
+
+Licensing Information:
+[15:42:11.095601] Configured Lic search path (21.01-s002): 5280@cadence
+
+Licensing Information:
+[15:42:12.258296] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /tmp/test_finger.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Time for NDB Parsing: CPU = 42.937 ms, elapsed = 1.21814 s.
+Time accumulated: CPU = 70.361 ms, elapsed = 1.21814 s.
+Peak resident memory used = 145 Mbytes.
+
+Time for Elaboration: CPU = 8.255 ms, elapsed = 8.55684 ms.
+Time accumulated: CPU = 78.669 ms, elapsed = 1.22676 s.
+Peak resident memory used = 154 Mbytes.
+
+
+Time for EDB Visiting: CPU = 171 us, elapsed = 181.913 us.
+Time accumulated: CPU = 78.917 ms, elapsed = 1.22702 s.
+Peak resident memory used = 154 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `vdd'.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 dc 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 829 us, elapsed = 3.58295 ms.
+Time accumulated: CPU = 79.799 ms, elapsed = 1.23066 s.
+Peak resident memory used = 156 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************
+DC Analysis `op'
+****************
+
+Notice from spectre during DC analysis `op'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file /tmp/test_finger.raw/op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vds:p) = 8.456 uA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 669 us, elapsed = 2.09117 ms.
+Total time required for dc analysis `op': CPU = 692 us, elapsed = 2.1112 ms, util. = 32.8%.
+Time accumulated: CPU = 82.897 ms, elapsed = 1.23526 s.
+Peak resident memory used = 159 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[15:42:12.306762] Cdslmd servers:5280@cadence
+[15:42:12.306768] Feature usage summary:
+[15:42:12.306768] Virtuoso_Spectre
+
+
+Aggregate audit (3:42:12 PM, Thur Oct 29, 2026):
+Time used: CPU = 83.5 ms, elapsed = 1.24 s, util. = 6.75%.
+Time spent in licensing: elapsed = 1.13 s, percentage of total = 91.6%.
+Peak memory used = 159 Mbytes.
+Simulation started at: 3:42:11 PM, Thur Oct 29, 2026, ended at: 3:42:12 PM, Thur Oct 29, 2026, with elapsed time (wall clock): 1.24 s.
+spectre completes with 0 errors, 0 warnings, and 3 notices.

@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "tb_rfc_ota_dc.scs"
+save XOTA:oppoint

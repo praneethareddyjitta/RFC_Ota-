@@ -1,0 +1,119 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "21.1.0.546.isr13"
+"date" "3:56:03 PM, Thur Oct 29, 2026"
+"design" "(no title)"
+"analysis type" "dc"
+"analysis name" "op"
+"analysis description" "DC Analysis `op'"
+"xVecSorted" "unsorted"
+"tolerance.relative" 0.00100000
+"reltol" 0.00100000
+"abstol(V)" 1.00000e-06
+"abstol(I)" 1.00000e-12
+"temp" 27.0000
+"tnom" 27.0000
+"tempeffects" "all"
+"gmindc" 1.00000e-12
+TYPE
+"LogicV" FLOAT DOUBLE PROP(
+"key" "node"
+)
+"V" FLOAT DOUBLE PROP(
+"units" "V"
+"key" "node"
+"tolerance" 1.00000e-06
+)
+"I" FLOAT DOUBLE PROP(
+"units" "A"
+"key" "branch"
+"tolerance" 1.00000e-12
+)
+"MMF" FLOAT DOUBLE PROP(
+"units" "A*turn"
+"key" "node"
+"tolerance" 1.00000e-12
+)
+"Wb" FLOAT DOUBLE PROP(
+"units" "Wb"
+"key" "node"
+"tolerance" 1.00000e-09
+)
+"Temp" FLOAT DOUBLE PROP(
+"units" "C"
+"key" "node"
+"tolerance" 0.000100000
+)
+"Pwr" FLOAT DOUBLE PROP(
+"units" "W"
+"key" "node"
+"tolerance" 1.00000e-09
+)
+"U" FLOAT DOUBLE PROP(
+"units" ""
+"key" "node"
+"tolerance" 1.00000e-06
+)
+"V/Sec" FLOAT DOUBLE PROP(
+"units" "V/s"
+"key" "node"
+"tolerance" 0.000100000
+)
+"I/Sec" FLOAT DOUBLE PROP(
+"units" "A/s"
+"key" "node"
+"tolerance" 1.00000e-06
+)
+"1/Sec" FLOAT DOUBLE PROP(
+"units" "1/s"
+"key" "node"
+"tolerance" 0.000100000
+)
+"HOD" FLOAT DOUBLE PROP(
+"units" ""
+"key" "node"
+"tolerance" 0.0100000
+)
+"Q" FLOAT DOUBLE PROP(
+"units" "Coul"
+"key" "node"
+"tolerance" 1.00000e-15
+)
+VALUE
+"vdd" "V" 1.800000000000000e+00
+"gnd" "V" 0.000000000000000e+00
+"vb1" "V" 1.203000000000000e+00
+"vb2" "V" 1.273000000000000e+00
+"vb3" "V" 8.740000000000000e-01
+"vb4" "V" 8.010000000000000e-01
+"vb5" "V" 7.520000000000000e-01
+"inp" "V" 9.000000000000000e-01
+"inm" "V" 9.000000000000000e-01
+"voutp" "V" 3.685885033876793e-01
+"voutm" "V" 3.685885033876862e-01
+"XOTA.y1" "V" 1.724095187581993e+00
+"XOTA.y2" "V" 1.724095187581993e+00
+"XOTA.vs" "V" 1.364911066462985e+00
+"XOTA.s11" "V" 4.843438675003694e-01
+"XOTA.z1" "V" 1.359276403922986e+00
+"XOTA.z2" "V" 1.359276403922986e+00
+"XOTA.node_x" "V" 3.636336412705114e-01
+"XOTA.node_xbar" "V" 3.636336412705114e-01
+"XOTA.s5a" "V" 3.560510382438603e-01
+"XOTA.s6a" "V" 3.560510382438553e-01
+"XOTA.s5c" "V" 3.014598678013057e-01
+"XOTA.s6c" "V" 3.014598678013057e-01
+"XOTA.s5b" "V" 3.521879250933772e-01
+"XOTA.s6b" "V" 3.521879250933772e-01
+"XOTA.scmfb" "V" 3.794146648988587e-01
+"Vb1:p" "I" 0.000000000000000e+00
+"Vb2:p" "I" 0.000000000000000e+00
+"Vb3:p" "I" 0.000000000000000e+00
+"Vb4:p" "I" 0.000000000000000e+00
+"Vb5:p" "I" 0.000000000000000e+00
+"Vdd:p" "I" -3.227197788195899e-06
+"Vgnd:p" "I" 3.227197786601187e-06
+"VinM:p" "I" 0.000000000000000e+00
+"VinP:p" "I" 0.000000000000000e+00
+END

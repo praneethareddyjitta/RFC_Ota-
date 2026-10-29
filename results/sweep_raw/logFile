@@ -1,0 +1,309 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Thu Oct 29 15:58:18 2026"
+"psfversion" "1.4.0"
+"simulator" "spectre"
+"version" "21.1.0.546.isr13"
+"date" "3:58:18 PM, Thur Oct 29, 2026"
+"design" ""
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"sweep_vb3_dc_sweep-sweep" "analysisInst" (
+"sweep"
+"sweep_vb3_dc_sweep.sweep"
+"PSF"
+""
+("vb3_tail")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"sweep_vb3-000_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-000_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-000_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.650000
+)
+
+"sweep_vb3-001_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-001_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-001_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.660000
+)
+
+"sweep_vb3-002_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-002_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-002_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.670000
+)
+
+"sweep_vb3-003_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-003_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-003_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.680000
+)
+
+"sweep_vb3-004_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-004_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-004_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.690000
+)
+
+"sweep_vb3-005_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-005_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-005_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.700000
+)
+
+"sweep_vb3-006_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-006_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-006_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.710000
+)
+
+"sweep_vb3-007_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-007_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-007_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.720000
+)
+
+"sweep_vb3-008_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-008_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-008_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.730000
+)
+
+"sweep_vb3-009_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-009_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-009_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.740000
+)
+
+"sweep_vb3-010_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-010_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-010_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.750000
+)
+
+"sweep_vb3-011_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-011_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-011_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.760000
+)
+
+"sweep_vb3-012_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-012_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-012_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.770000
+)
+
+"sweep_vb3-013_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-013_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-013_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.780000
+)
+
+"sweep_vb3-014_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-014_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-014_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.790000
+)
+
+"sweep_vb3-015_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-015_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-015_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.800000
+)
+
+"sweep_vb3-016_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-016_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-016_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.810000
+)
+
+"sweep_vb3-017_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-017_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-017_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.820000
+)
+
+"sweep_vb3-018_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-018_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-018_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.830000
+)
+
+"sweep_vb3-019_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-019_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-019_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.840000
+)
+
+"sweep_vb3-020_dc_sweep-dc" "analysisInst" (
+"dc"
+"sweep_vb3-020_dc_sweep.dc"
+"PSF"
+"sweep_vb3_dc_sweep-sweep"
+()
+"DC Analysis `sweep_vb3-020_dc_sweep'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"vb3_tail" 0.850000
+)
+
+END

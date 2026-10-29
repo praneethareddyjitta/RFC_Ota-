@@ -1,0 +1,30 @@
+
+simulator lang=spectre
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=NN
+include "rfc_ota_core.scs"
+
+Vdd (vdd 0) vsource dc=1.8
+Vgnd (gnd 0) vsource dc=0
+
+// Closed-loop DC bias with high-value resistors to find natural DC operating point
+Rfb1 (voutp inp) resistor r=1G
+Rfb2 (voutm inm) resistor r=1G
+Cinp (inp vcm) capacitor c=10p
+Cinm (inm vcm) capacitor c=10p
+Vcm (vcm 0) vsource dc=0.9
+
+// Biasing voltages
+parameters p_vb1=1.23 p_vb2=1.273 p_vb3=0.82 p_vb4=0.801 p_vb5=0.752
+Vb1 (vb1 0) vsource dc=p_vb1
+Vb2 (vb2 0) vsource dc=p_vb2
+Vb3 (vb3 0) vsource dc=p_vb3
+Vb4 (vb4 0) vsource dc=p_vb4
+Vb5 (vb5 0) vsource dc=p_vb5
+
+CLp (voutp 0) capacitor c=1.0p
+CLm (voutm 0) capacitor c=1.0p
+
+XOTA (inp inm voutp voutm vdd gnd vb1 vb2 vb3 vb4 vb5) rfc_ota
+
+op dc
+save voutp voutm inp inm XOTA.M9:d XOTA.M1a:d XOTA.M3a:d XOTA.M5a:d XOTA.M7a:d Vdd:p

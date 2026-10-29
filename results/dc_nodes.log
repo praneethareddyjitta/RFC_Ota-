@@ -1,0 +1,3383 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: STUDENT   Host: vlsi80.vce.ac.in   HostID: 7F0100   PID: 12986
+Memory  available: 23.9842 GB  physical: 33.4027 GB
+Linux   : Rocky Linux release 8.10 (Green Obsidian)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2700.0] (  6 ),  1 [2700.0] (  7 ),  2 [2700.0] (  8 )
+                 3 [2700.0] (  9 ),  4 [3471.2] ( 10 ),  5 [2700.0] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 4.6 %, 4.0 %, 3.8 %
+Hyperthreading is enabled
+
+
+Simulating `print_dc.scs' on vlsi80.vce.ac.in at 3:46:37 PM, Thur Oct 29, 2026 (process id: 12986).
+Current working directory: /home/STUDENT/Documents/rfc_OTA_Project/netlists
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64 print_dc.scs  \
+        =log ../results/dc_nodes.log
+
+Licensing Information:
+[15:46:37.095697] Configured Lic search path (21.01-s002): 5280@cadence
+
+Licensing Information:
+[15:46:38.096954] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/print_dc.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/tb_rfc_ota_dc.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/rfc_ota_core.scs
+Time for NDB Parsing: CPU = 39.883 ms, elapsed = 1.54696 s.
+Time accumulated: CPU = 67.957 ms, elapsed = 1.54696 s.
+Peak resident memory used = 145 Mbytes.
+
+Time for Elaboration: CPU = 9.032 ms, elapsed = 9.05609 ms.
+Time accumulated: CPU = 77.039 ms, elapsed = 1.55607 s.
+Peak resident memory used = 154 Mbytes.
+
+
+Time for EDB Visiting: CPU = 492 us, elapsed = 490.904 us.
+Time accumulated: CPU = 77.582 ms, elapsed = 1.55661 s.
+Peak resident memory used = 155 Mbytes.
+
+    WARNING (SPECTRE-8287): Ignoring invalid item `XOTA:all' in save statement.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 26
+            bsim3v3 26    
+          capacitor 2     
+            vsource 9     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 2     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 1.19 ms, elapsed = 8.76117 ms.
+Time accumulated: CPU = 78.798 ms, elapsed = 1.5654 s.
+Peak resident memory used = 157 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************
+DC Analysis `op'
+****************
+
+Notice from spectre during DC analysis `op'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file ./print_dc.raw/op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `op'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vdd:p) = 3.227 uA
+Convergence achieved in 48 iterations.
+DC simulation time: CPU = 1.702 ms, elapsed = 3.01003 ms.
+Total time required for dc analysis `op': CPU = 1.72 ms, elapsed = 3.02601 ms, util. = 56.8%.
+Time accumulated: CPU = 82.74 ms, elapsed = 1.57065 s.
+Peak resident memory used = 159 Mbytes.
+
+
+**********************************
+Terminal to node map `info_nodes':
+**********************************
+
+
+bsim3v3: XOTA.M1a of nmos1
+          d : XOTA.y1
+          g : inp
+          s : XOTA.s11
+          b : gnd
+
+bsim3v3: XOTA.M1b of pmos1
+          d : XOTA.z1
+          g : inp
+          s : XOTA.vs
+          b : XOTA.vs
+
+bsim3v3: XOTA.M2a of nmos1
+          d : XOTA.y2
+          g : inm
+          s : XOTA.s11
+          b : gnd
+
+bsim3v3: XOTA.M2b of pmos1
+          d : XOTA.z2
+          g : inm
+          s : XOTA.vs
+          b : XOTA.vs
+
+bsim3v3: XOTA.M3a of pmos1
+          d : voutm
+          g : vb2
+          s : XOTA.y1
+          b : vdd
+
+bsim3v3: XOTA.M3b of pmos1
+          d : XOTA.node_x
+          g : vb4
+          s : XOTA.z1
+          b : vdd
+
+bsim3v3: XOTA.M4a of pmos1
+          d : voutp
+          g : vb2
+          s : XOTA.y2
+          b : vdd
+
+bsim3v3: XOTA.M4b of pmos1
+          d : XOTA.node_xbar
+          g : vb4
+          s : XOTA.z2
+          b : vdd
+
+bsim3v3: XOTA.M5a of nmos1
+          d : voutm
+          g : vb3
+          s : XOTA.s5a
+          b : gnd
+
+bsim3v3: XOTA.M5b of nmos1
+          d : XOTA.node_x
+          g : vb3
+          s : XOTA.s5b
+          b : gnd
+
+bsim3v3: XOTA.M5c of nmos1
+          d : XOTA.node_x
+          g : vb5
+          s : XOTA.s5c
+          b : gnd
+
+bsim3v3: XOTA.M6a of nmos1
+          d : voutp
+          g : vb3
+          s : XOTA.s6a
+          b : gnd
+
+bsim3v3: XOTA.M6b of nmos1
+          d : XOTA.node_xbar
+          g : vb3
+          s : XOTA.s6b
+          b : gnd
+
+bsim3v3: XOTA.M6c of nmos1
+          d : XOTA.node_xbar
+          g : vb5
+          s : XOTA.s6c
+          b : gnd
+
+bsim3v3: XOTA.M7a of nmos1
+          d : XOTA.s5a
+          g : XOTA.node_x
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M7b of nmos1
+          d : XOTA.s5b
+          g : XOTA.node_xbar
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M7c of nmos1
+          d : XOTA.s5c
+          g : XOTA.node_x
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M8a of nmos1
+          d : XOTA.s6a
+          g : XOTA.node_xbar
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M8b of nmos1
+          d : XOTA.s6b
+          g : XOTA.node_x
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M8c of nmos1
+          d : XOTA.s6c
+          g : XOTA.node_xbar
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M9 of pmos1
+          d : XOTA.y1
+          g : vb1
+          s : vdd
+          b : vdd
+
+bsim3v3: XOTA.M10 of pmos1
+          d : XOTA.y2
+          g : vb1
+          s : vdd
+          b : vdd
+
+bsim3v3: XOTA.M11 of nmos1
+          d : XOTA.s11
+          g : vb3
+          s : XOTA.scmfb
+          b : gnd
+
+bsim3v3: XOTA.M12 of pmos1
+          d : XOTA.vs
+          g : vb1
+          s : vdd
+          b : vdd
+
+bsim3v3: XOTA.M13 of nmos1
+          d : XOTA.scmfb
+          g : voutm
+          s : gnd
+          b : gnd
+
+bsim3v3: XOTA.M14 of nmos1
+          d : XOTA.scmfb
+          g : voutp
+          s : gnd
+          b : gnd
+
+
+capacitor: CLm
+          1 : voutm
+          2 : 0
+
+capacitor: CLp
+          1 : voutp
+          2 : 0
+
+
+vsource: Vb1
+          p : vb1
+          n : 0
+
+vsource: Vb2
+          p : vb2
+          n : 0
+
+vsource: Vb3
+          p : vb3
+          n : 0
+
+vsource: Vb4
+          p : vb4
+          n : 0
+
+vsource: Vb5
+          p : vb5
+          n : 0
+
+vsource: Vdd
+          p : vdd
+          n : 0
+
+vsource: Vgnd
+          p : gnd
+          n : 0
+
+vsource: VinM
+          p : inm
+          n : 0
+
+vsource: VinP
+          p : inp
+          n : 0
+
+
+
+
+****************************************
+Operating-Point information `info_devs':
+****************************************
+Operating point computed in DC analysis `op' at T = 27 C.
+
+    V(gnd) = 0 V
+    V(inm) = 900 mV
+    V(inp) = 900 mV
+    I(Vb1:p) = 0 A
+    I(Vb2:p) = 0 A
+    I(Vb3:p) = 0 A
+    I(Vb4:p) = 0 A
+    I(Vb5:p) = 0 A
+    I(Vdd:p) = -3.2272 uA
+    I(Vgnd:p) = 3.2272 uA
+    I(VinM:p) = 0 A
+    I(VinP:p) = 0 A
+    V(vb1) = 1.203 V
+    V(vb2) = 1.273 V
+    V(vb3) = 874 mV
+    V(vb4) = 801 mV
+    V(vb5) = 752 mV
+    V(vdd) = 1.8 V
+    V(voutm) = 368.589 mV
+    V(voutp) = 368.589 mV
+    V(XOTA.node_x) = 363.634 mV
+    V(XOTA.node_xbar) = 363.634 mV
+    V(XOTA.s5a) = 356.051 mV
+    V(XOTA.s5b) = 352.188 mV
+    V(XOTA.s5c) = 301.46 mV
+    V(XOTA.s6a) = 356.051 mV
+    V(XOTA.s6b) = 352.188 mV
+    V(XOTA.s6c) = 301.46 mV
+    V(XOTA.s11) = 484.344 mV
+    V(XOTA.scmfb) = 379.415 mV
+    V(XOTA.vs) = 1.36491 V
+    V(XOTA.y1) = 1.7241 V
+    V(XOTA.y2) = 1.7241 V
+    V(XOTA.z1) = 1.35928 V
+    V(XOTA.z2) = 1.35928 V
+
+
+Most positive signals:
+    V(vdd) = 1.8 V
+    I(Vgnd:p) = 3.2272 uA
+
+Most negative signals:
+    I(Vdd:p) = -3.2272 uA
+
+Smallest signals:
+    V(gnd) = 0 V
+    I(VinM:p) = 0 A
+
+
+Instance: XOTA.M1a of nmos1
+Model: XOTA.M1a.nmos1_int.1
+Primitive: bsim3v3
+          d : V(XOTA.y1) = 1.7241 V
+          g : V(inp) = 900 mV
+          s : V(XOTA.s11) = 484.344 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 113.758 nA
+       isub = 1.12109 pA
+        vgs = 415.656 mV
+        vds = 1.23975 V
+        vbs = -484.344 mV
+        vgb = 900 mV
+        vdb = 1.7241 V
+        vgd = -824.095 mV
+        vth = 629.448 mV
+      vdsat = 45.7665 mV
+     vfbeff = -958.552 mV
+         gm = 3.27392 uS
+        gds = 17.2227 nS
+       gmbs = 794.25 nS
+    betaeff = 11.5823 mA/V^2
+        cjd = 1.91277 nF
+        cjs = 2.48055 nF
+         qb = -39.2431 fCoul
+         qg = 36.9869 fCoul
+         qd = 4.55543 fCoul
+        qbd = -3.97965 nCoul
+        qbs = -1.31338 nCoul
+        cgg = 24.5199 fF
+        cgd = -5.52103 fF
+        cgs = -5.41734 fF
+        cgb = -13.5815 fF
+        cdg = -5.52782 fF
+        cdd = 1.91278 nF
+        cds = 22.4749e-21 F
+        cdb = -1.91277 nF
+        csg = -5.57807 fF
+        csd = -27.0769e-21 F
+        css = 2.48056 nF
+        csb = -2.48055 nF
+        cbg = -13.414 fF
+        cbd = -1.91277 nF
+        cbs = -2.48055 nF
+        cbb = 4.39334 nF
+        ron = 10.8982 MOhm
+         id = 113.794 nA
+         is = -113.723 nA
+      ibulk = -71.1632 pA
+        ibs = -35.0211 pA
+        ibd = -36.1421 pA
+        pwr = 141.11 nW
+   gmoverid = 28.7798 1/V
+       ueff = 41.3094e-03
+     cgsovl = 5.5278 fF
+     cgdovl = 5.5278 fF
+     cgbovl = 245.518 aF
+         i1 = 113.794 nA
+         i3 = -113.723 nA
+         i4 = -71.1632 pA
+        gbd = 10.2215 pS
+        gbs = 0 S
+    vgsteff = 343.396 uV
+       qinv = 3.08038 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 39.0237 fCoul
+        qsi = -1.6057 aCoul
+        qdi = -597.691e-24 Coul
+        qbi = -39.0221 fCoul
+      cddbi = 931.405e-24 F
+      cssbi = 62.9061 aF
+      cggbi = 13.2188 fF
+      cgsbi = 110.464 aF
+      cgdbi = 6.76594 aF
+      cbdbi = -6.73979 aF
+      cbsbi = -173.392 aF
+      qsrco = -2.29927 fCoul
+        ide = 113.797 nA
+        ige = 0 A
+        ise = 113.794 nA
+        ibe = -73.3717 pA
+        idb = 35.0211 pA
+        isb = 35.0211 pA
+        vsb = 484.344 mV
+        gmb = 794.25 nS
+        vgt = -213.792 mV
+       vdss = 45.7665 mV
+  vsat_marg = 1.19398 V
+  self_gain = 190.093
+       rout = 58.063 MOhm
+       beff = 4.9794 uA/V^2
+        fug = 21.2505 MHz
+     vearly = 6.60737 V
+
+Instance: XOTA.M1b of pmos1
+Model: XOTA.M1b.pmos1_int.1
+Primitive: bsim3v3
+          d : V(XOTA.z1) = 1.35928 V
+          g : V(inp) = 900 mV
+          s : V(XOTA.vs) = 1.36491 V
+          b : V(XOTA.vs) = 1.36491 V
+     region = triode
+   reversed = no
+        ids = -749.5 nA
+       isub = -729.677e-24 A
+        vgs = -464.911 mV
+        vds = -5.63466 mV
+        vbs = 0 V
+        vgb = -464.911 mV
+        vdb = -5.63466 mV
+        vgd = -459.276 mV
+        vth = -458.183 mV
+      vdsat = -74.3391 mV
+     vfbeff = -1.10264 V
+         gm = 10.6251 uS
+        gds = 127.378 uS
+       gmbs = 3.81762 uS
+    betaeff = 3.88016 mA/V^2
+        cjd = 6.59448 nF
+        cjs = 6.6132 nF
+         qb = -79.3999 fCoul
+         qg = 91.4434 fCoul
+         qd = -5.76739 fCoul
+        qbd = 37.2101 pCoul
+        qbs = 237.917 aCoul
+        cgg = 101.88 fF
+        cgd = -30.2704 fF
+        cgs = -53.1483 fF
+        cgb = -18.4612 fF
+        cdg = -38.8977 fF
+        cdd = 6.59454 nF
+        cds = -13.6079 fF
+        cdb = -6.59449 nF
+        csg = -45.2414 fF
+        csd = -17.6838 fF
+        css = 6.61328 nF
+        csb = -6.61322 nF
+        cbg = -17.7407 fF
+        cbd = -6.5945 nF
+        cbs = -6.61321 nF
+        cbb = 13.2077 nF
+        ron = 7.51789 kOhm
+         id = -749.509 nA
+         is = 749.5 nA
+      ibulk = 9.02563 pA
+        ibs = 57.6265 aA
+        ibd = 9.02557 pA
+        pwr = 4.22323 nW
+   gmoverid = 14.1762 1/V
+       ueff = 6.78268e-03
+     cgsovl = 9.8406 fF
+     cgdovl = 9.8406 fF
+     cgbovl = 739.661 aF
+         i1 = -749.509 nA
+         i3 = 749.5 nA
+         i4 = 9.02563 pA
+        gbd = 1.6018 nS
+        gbs = 1.6018 nS
+    vgsteff = 40.6626 mV
+       qinv = 228.911 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 82.005 fCoul
+        qsi = 1.70114 fCoul
+        qdi = 1.24783 fCoul
+        qbi = 79.056 fCoul
+      cddbi = 53.0112 fF
+      cssbi = 65.7091 fF
+      cggbi = 81.459 fF
+      cgsbi = -43.3077 fF
+      cgdbi = -20.4298 fF
+      cbdbi = -14.8977 fF
+      cbsbi = -8.79348 fF
+      qsrco = -2.87387 fCoul
+        ide = -749.509 nA
+        ige = 0 A
+        ise = -749.509 nA
+        ibe = 9.03126 pA
+        idb = 9.02557 pA
+        isb = 57.6265 aA
+        vsb = -0 V
+        gmb = 3.81762 uS
+        vgt = -6.72779 mV
+       vdss = -74.3391 mV
+  vsat_marg = 68.7044 mV
+  self_gain = 83.4136e-03
+       rout = 7.85063 kOhm
+       beff = 33.1179 mA/V^2
+        fug = 16.5983 MHz
+     vearly = 5.88412 mV
+
+Instance: XOTA.M2a of nmos1
+Model: XOTA.M1a.nmos1_int.1
+Primitive: bsim3v3
+          d : V(XOTA.y2) = 1.7241 V
+          g : V(inm) = 900 mV
+          s : V(XOTA.s11) = 484.344 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 113.758 nA
+       isub = 1.12109 pA
+        vgs = 415.656 mV
+        vds = 1.23975 V
+        vbs = -484.344 mV
+        vgb = 900 mV
+        vdb = 1.7241 V
+        vgd = -824.095 mV
+        vth = 629.448 mV
+      vdsat = 45.7665 mV
+     vfbeff = -958.552 mV
+         gm = 3.27392 uS
+        gds = 17.2227 nS
+       gmbs = 794.25 nS
+    betaeff = 11.5823 mA/V^2
+        cjd = 1.91277 nF
+        cjs = 2.48055 nF
+         qb = -39.2431 fCoul
+         qg = 36.9869 fCoul
+         qd = 4.55543 fCoul
+        qbd = -3.97965 nCoul
+        qbs = -1.31338 nCoul
+        cgg = 24.5199 fF
+        cgd = -5.52103 fF
+        cgs = -5.41734 fF
+        cgb = -13.5815 fF
+        cdg = -5.52782 fF
+        cdd = 1.91278 nF
+        cds = 22.4749e-21 F
+        cdb = -1.91277 nF
+        csg = -5.57807 fF
+        csd = -27.0769e-21 F
+        css = 2.48056 nF
+        csb = -2.48055 nF
+        cbg = -13.414 fF
+        cbd = -1.91277 nF
+        cbs = -2.48055 nF
+        cbb = 4.39334 nF
+        ron = 10.8982 MOhm
+         id = 113.794 nA
+         is = -113.723 nA
+      ibulk = -71.1632 pA
+        ibs = -35.0211 pA
+        ibd = -36.1421 pA
+        pwr = 141.11 nW
+   gmoverid = 28.7798 1/V
+       ueff = 41.3094e-03
+     cgsovl = 5.5278 fF
+     cgdovl = 5.5278 fF
+     cgbovl = 245.518 aF
+         i1 = 113.794 nA
+         i3 = -113.723 nA
+         i4 = -71.1632 pA
+        gbd = 10.2215 pS
+        gbs = 0 S
+    vgsteff = 343.396 uV
+       qinv = 3.08038 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 39.0237 fCoul
+        qsi = -1.6057 aCoul
+        qdi = -597.691e-24 Coul
+        qbi = -39.0221 fCoul
+      cddbi = 931.405e-24 F
+      cssbi = 62.9061 aF
+      cggbi = 13.2188 fF
+      cgsbi = 110.464 aF
+      cgdbi = 6.76594 aF
+      cbdbi = -6.73979 aF
+      cbsbi = -173.392 aF
+      qsrco = -2.29927 fCoul
+        ide = 113.797 nA
+        ige = 0 A
+        ise = 113.794 nA
+        ibe = -73.3717 pA
+        idb = 35.0211 pA
+        isb = 35.0211 pA
+        vsb = 484.344 mV
+        gmb = 794.25 nS
+        vgt = -213.792 mV
+       vdss = 45.7665 mV
+  vsat_marg = 1.19398 V
+  self_gain = 190.093
+       rout = 58.063 MOhm
+       beff = 4.9794 uA/V^2
+        fug = 21.2505 MHz
+     vearly = 6.60737 V
+
+Instance: XOTA.M2b of pmos1
+Model: XOTA.M1b.pmos1_int.1
+Primitive: bsim3v3
+          d : V(XOTA.z2) = 1.35928 V
+          g : V(inm) = 900 mV
+          s : V(XOTA.vs) = 1.36491 V
+          b : V(XOTA.vs) = 1.36491 V
+     region = triode
+   reversed = no
+        ids = -749.5 nA
+       isub = -729.677e-24 A
+        vgs = -464.911 mV
+        vds = -5.63466 mV
+        vbs = 0 V
+        vgb = -464.911 mV
+        vdb = -5.63466 mV
+        vgd = -459.276 mV
+        vth = -458.183 mV
+      vdsat = -74.3391 mV
+     vfbeff = -1.10264 V
+         gm = 10.6251 uS
+        gds = 127.378 uS
+       gmbs = 3.81762 uS
+    betaeff = 3.88016 mA/V^2
+        cjd = 6.59448 nF
+        cjs = 6.6132 nF
+         qb = -79.3999 fCoul
+         qg = 91.4434 fCoul
+         qd = -5.76739 fCoul
+        qbd = 37.2101 pCoul
+        qbs = 237.917 aCoul
+        cgg = 101.88 fF
+        cgd = -30.2704 fF
+        cgs = -53.1483 fF
+        cgb = -18.4612 fF
+        cdg = -38.8977 fF
+        cdd = 6.59454 nF
+        cds = -13.6079 fF
+        cdb = -6.59449 nF
+        csg = -45.2414 fF
+        csd = -17.6838 fF
+        css = 6.61328 nF
+        csb = -6.61322 nF
+        cbg = -17.7407 fF
+        cbd = -6.5945 nF
+        cbs = -6.61321 nF
+        cbb = 13.2077 nF
+        ron = 7.51789 kOhm
+         id = -749.509 nA
+         is = 749.5 nA
+      ibulk = 9.02563 pA
+        ibs = 57.6265 aA
+        ibd = 9.02557 pA
+        pwr = 4.22323 nW
+   gmoverid = 14.1762 1/V
+       ueff = 6.78268e-03
+     cgsovl = 9.8406 fF
+     cgdovl = 9.8406 fF
+     cgbovl = 739.661 aF
+         i1 = -749.509 nA
+         i3 = 749.5 nA
+         i4 = 9.02563 pA
+        gbd = 1.6018 nS
+        gbs = 1.6018 nS
+    vgsteff = 40.6626 mV
+       qinv = 228.911 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 82.005 fCoul
+        qsi = 1.70114 fCoul
+        qdi = 1.24783 fCoul
+        qbi = 79.056 fCoul
+      cddbi = 53.0112 fF
+      cssbi = 65.7091 fF
+      cggbi = 81.459 fF
+      cgsbi = -43.3077 fF
+      cgdbi = -20.4298 fF
+      cbdbi = -14.8977 fF
+      cbsbi = -8.79348 fF
+      qsrco = -2.87387 fCoul
+        ide = -749.509 nA
+        ige = 0 A
+        ise = -749.509 nA
+        ibe = 9.03126 pA
+        idb = 9.02557 pA
+        isb = 57.6265 aA
+        vsb = -0 V
+        gmb = 3.81762 uS
+        vgt = -6.72779 mV
+       vdss = -74.3391 mV
+  vsat_marg = 68.7044 mV
+  self_gain = 83.4136e-03
+       rout = 7.85063 kOhm
+       beff = 33.1179 mA/V^2
+        fug = 16.5983 MHz
+     vearly = 5.88412 mV
+
+Instance: XOTA.M3a of pmos1
+Model: XOTA.M3a.pmos1_int.3
+Primitive: bsim3v3
+          d : V(voutm) = 368.589 mV
+          g : V(vb2) = 1.273 V
+          s : V(XOTA.y1) = 1.7241 V
+          b : V(vdd) = 1.8 V
+     region = subth
+   reversed = no
+        ids = -750.361 nA
+       isub = -10.2437 fA
+        vgs = -451.095 mV
+        vds = -1.35551 V
+        vbs = 75.9048 mV
+        vgb = -527 mV
+        vdb = -1.43141 V
+        vgd = 904.411 mV
+        vth = -462.451 mV
+      vdsat = -66.1285 mV
+     vfbeff = -982.532 mV
+         gm = 14.7491 uS
+        gds = 28.8026 nS
+       gmbs = 4.63505 uS
+    betaeff = 669.815 uA/V^2
+        cjd = 2.86104 nF
+        cjs = 4.24884 nF
+         qb = -180.998 fCoul
+         qg = 181.724 fCoul
+         qd = 5.93213 fCoul
+        qbd = 4.95047 nCoul
+        qbs = 328.458 pCoul
+        cgg = 169.335 fF
+        cgd = -6.52681 fF
+        cgs = -109.435 fF
+        cgb = -53.3728 fF
+        cdg = -6.59027 fF
+        cdd = 2.86104 nF
+        cds = 37.4935 aF
+        cdb = -2.86104 nF
+        csg = -99.1507 fF
+        csd = -21.6765 aF
+        css = 4.24897 nF
+        csb = -4.24887 nF
+        cbg = -63.5938 fF
+        cbd = -2.86104 nF
+        cbs = -4.24886 nF
+        cbb = 7.10996 nF
+        ron = 1.80647 MOhm
+         id = -750.388 nA
+         is = 750.333 nA
+      ibulk = 54.8503 pA
+        ibs = 27.42 pA
+        ibd = 27.4303 pA
+        pwr = 1.01716 uW
+   gmoverid = 19.656 1/V
+       ueff = 7.61062e-03
+     cgsovl = 6.5604 fF
+     cgdovl = 6.5604 fF
+     cgbovl = 2.04702 fF
+         i1 = -750.388 nA
+         i3 = 750.333 nA
+         i4 = 54.8503 pA
+        gbd = 147.899 fS
+        gbs = 0 S
+    vgsteff = 32.2881 mV
+       qinv = 16.381 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 183.619 fCoul
+        qsi = 3.6993 fCoul
+        qdi = 1.17483 aCoul
+        qbi = 179.919 fCoul
+      cddbi = 1.70239 aF
+      cssbi = 121.522 fF
+      cggbi = 154.167 fF
+      cgsbi = -102.875 fF
+      cgdbi = 33.5938 aF
+      cbdbi = -13.6198 aF
+      cbsbi = -18.6848 fF
+      qsrco = 739.937 aCoul
+        ide = -750.391 nA
+        ige = 0 A
+        ise = -750.388 nA
+        ibe = 56.3576 pA
+        idb = 27.42 pA
+        isb = 27.42 pA
+        vsb = -75.9048 mV
+        gmb = 4.63505 uS
+        vgt = 11.3562 mV
+       vdss = -66.1285 mV
+  vsat_marg = -1.28938 V
+  self_gain = 512.075
+       rout = 34.719 MOhm
+       beff = 11.6373 mA/V^2
+        fug = 13.8624 MHz
+     vearly = 26.0529 V
+
+Instance: XOTA.M3b of pmos1
+Model: XOTA.M3a.pmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.node_x) = 363.634 mV
+          g : V(vb4) = 801 mV
+          s : V(XOTA.z1) = 1.35928 V
+          b : V(vdd) = 1.8 V
+     region = subth
+   reversed = no
+        ids = -749.536 nA
+       isub = -7.71759 aA
+        vgs = -558.276 mV
+        vds = -995.643 mV
+        vbs = 440.724 mV
+        vgb = -999 mV
+        vdb = -1.43637 V
+        vgd = 437.366 mV
+        vth = -566.465 mV
+      vdsat = -68.5133 mV
+     vfbeff = -970.374 mV
+         gm = 14.7406 uS
+        gds = 28.5153 nS
+       gmbs = 4.02426 uS
+    betaeff = 632.895 uA/V^2
+        cjd = 2.85829 nF
+        cjs = 3.67683 nF
+         qb = -215.257 fCoul
+         qg = 219.928 fCoul
+         qd = 2.86704 fCoul
+        qbd = 4.96464 nCoul
+        qbs = 1.76609 nCoul
+        cgg = 166.967 fF
+        cgd = -6.52575 fF
+        cgs = -115.328 fF
+        cgb = -45.1135 fF
+        cdg = -6.61879 fF
+        cdd = 2.85829 nF
+        cds = 69.6171 aF
+        cdb = -2.85829 nF
+        csg = -104.37 fF
+        csd = -25.5671 aF
+        css = 3.67696 nF
+        csb = -3.67685 nF
+        cbg = -55.979 fF
+        cbd = -2.85829 nF
+        cbs = -3.67684 nF
+        cbb = 6.53519 nF
+        ron = 1.32835 MOhm
+         id = -749.563 nA
+         is = 749.508 nA
+      ibulk = 54.84 pA
+        ibs = 27.42 pA
+        ibd = 27.42 pA
+        pwr = 746.321 nW
+   gmoverid = 19.6663 1/V
+       ueff = 7.19112e-03
+     cgsovl = 6.5604 fF
+     cgdovl = 6.5604 fF
+     cgbovl = 2.04702 fF
+         i1 = -749.563 nA
+         i3 = 749.508 nA
+         i4 = 54.84 pA
+        gbd = 211.737 aS
+        gbs = 0 S
+    vgsteff = 33.4018 mV
+       qinv = 16.0582 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 217.089 fCoul
+        qsi = 3.8751 fCoul
+        qdi = 2.26176 aCoul
+        qbi = 213.212 fCoul
+      cddbi = 4.44589 aF
+      cssbi = 124.084 fF
+      cggbi = 151.8 fF
+      cgsbi = -108.768 fF
+      cgdbi = 34.6474 aF
+      cbdbi = -13.5261 aF
+      cbsbi = -15.3857 fF
+      qsrco = 212.579 aCoul
+        ide = -749.566 nA
+        ige = 0 A
+        ise = -749.564 nA
+        ibe = 56.7171 pA
+        idb = 27.42 pA
+        isb = 27.42 pA
+        vsb = -440.724 mV
+        gmb = 4.02426 uS
+        vgt = 8.18896 mV
+       vdss = -68.5133 mV
+  vsat_marg = -927.129 mV
+  self_gain = 516.937
+       rout = 35.0689 MOhm
+       beff = 22.3554 mA/V^2
+        fug = 14.0509 MHz
+     vearly = 26.2864 V
+
+Instance: XOTA.M4a of pmos1
+Model: XOTA.M3a.pmos1_int.3
+Primitive: bsim3v3
+          d : V(voutp) = 368.589 mV
+          g : V(vb2) = 1.273 V
+          s : V(XOTA.y2) = 1.7241 V
+          b : V(vdd) = 1.8 V
+     region = subth
+   reversed = no
+        ids = -750.361 nA
+       isub = -10.2437 fA
+        vgs = -451.095 mV
+        vds = -1.35551 V
+        vbs = 75.9048 mV
+        vgb = -527 mV
+        vdb = -1.43141 V
+        vgd = 904.411 mV
+        vth = -462.451 mV
+      vdsat = -66.1285 mV
+     vfbeff = -982.532 mV
+         gm = 14.7491 uS
+        gds = 28.8026 nS
+       gmbs = 4.63505 uS
+    betaeff = 669.815 uA/V^2
+        cjd = 2.86104 nF
+        cjs = 4.24884 nF
+         qb = -180.998 fCoul
+         qg = 181.724 fCoul
+         qd = 5.93213 fCoul
+        qbd = 4.95047 nCoul
+        qbs = 328.458 pCoul
+        cgg = 169.335 fF
+        cgd = -6.52681 fF
+        cgs = -109.435 fF
+        cgb = -53.3728 fF
+        cdg = -6.59027 fF
+        cdd = 2.86104 nF
+        cds = 37.4935 aF
+        cdb = -2.86104 nF
+        csg = -99.1507 fF
+        csd = -21.6765 aF
+        css = 4.24897 nF
+        csb = -4.24887 nF
+        cbg = -63.5938 fF
+        cbd = -2.86104 nF
+        cbs = -4.24886 nF
+        cbb = 7.10996 nF
+        ron = 1.80647 MOhm
+         id = -750.388 nA
+         is = 750.333 nA
+      ibulk = 54.8503 pA
+        ibs = 27.42 pA
+        ibd = 27.4303 pA
+        pwr = 1.01716 uW
+   gmoverid = 19.656 1/V
+       ueff = 7.61062e-03
+     cgsovl = 6.5604 fF
+     cgdovl = 6.5604 fF
+     cgbovl = 2.04702 fF
+         i1 = -750.388 nA
+         i3 = 750.333 nA
+         i4 = 54.8503 pA
+        gbd = 147.899 fS
+        gbs = 0 S
+    vgsteff = 32.2881 mV
+       qinv = 16.381 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 183.619 fCoul
+        qsi = 3.6993 fCoul
+        qdi = 1.17483 aCoul
+        qbi = 179.919 fCoul
+      cddbi = 1.70239 aF
+      cssbi = 121.522 fF
+      cggbi = 154.167 fF
+      cgsbi = -102.875 fF
+      cgdbi = 33.5938 aF
+      cbdbi = -13.6198 aF
+      cbsbi = -18.6848 fF
+      qsrco = 739.937 aCoul
+        ide = -750.391 nA
+        ige = 0 A
+        ise = -750.388 nA
+        ibe = 56.3576 pA
+        idb = 27.42 pA
+        isb = 27.42 pA
+        vsb = -75.9048 mV
+        gmb = 4.63505 uS
+        vgt = 11.3562 mV
+       vdss = -66.1285 mV
+  vsat_marg = -1.28938 V
+  self_gain = 512.075
+       rout = 34.719 MOhm
+       beff = 11.6373 mA/V^2
+        fug = 13.8624 MHz
+     vearly = 26.0529 V
+
+Instance: XOTA.M4b of pmos1
+Model: XOTA.M3a.pmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.node_xbar) = 363.634 mV
+          g : V(vb4) = 801 mV
+          s : V(XOTA.z2) = 1.35928 V
+          b : V(vdd) = 1.8 V
+     region = subth
+   reversed = no
+        ids = -749.536 nA
+       isub = -7.71759 aA
+        vgs = -558.276 mV
+        vds = -995.643 mV
+        vbs = 440.724 mV
+        vgb = -999 mV
+        vdb = -1.43637 V
+        vgd = 437.366 mV
+        vth = -566.465 mV
+      vdsat = -68.5133 mV
+     vfbeff = -970.374 mV
+         gm = 14.7406 uS
+        gds = 28.5153 nS
+       gmbs = 4.02426 uS
+    betaeff = 632.895 uA/V^2
+        cjd = 2.85829 nF
+        cjs = 3.67683 nF
+         qb = -215.257 fCoul
+         qg = 219.928 fCoul
+         qd = 2.86704 fCoul
+        qbd = 4.96464 nCoul
+        qbs = 1.76609 nCoul
+        cgg = 166.967 fF
+        cgd = -6.52575 fF
+        cgs = -115.328 fF
+        cgb = -45.1135 fF
+        cdg = -6.61879 fF
+        cdd = 2.85829 nF
+        cds = 69.6171 aF
+        cdb = -2.85829 nF
+        csg = -104.37 fF
+        csd = -25.5671 aF
+        css = 3.67696 nF
+        csb = -3.67685 nF
+        cbg = -55.979 fF
+        cbd = -2.85829 nF
+        cbs = -3.67684 nF
+        cbb = 6.53519 nF
+        ron = 1.32835 MOhm
+         id = -749.563 nA
+         is = 749.508 nA
+      ibulk = 54.84 pA
+        ibs = 27.42 pA
+        ibd = 27.42 pA
+        pwr = 746.321 nW
+   gmoverid = 19.6663 1/V
+       ueff = 7.19112e-03
+     cgsovl = 6.5604 fF
+     cgdovl = 6.5604 fF
+     cgbovl = 2.04702 fF
+         i1 = -749.563 nA
+         i3 = 749.508 nA
+         i4 = 54.84 pA
+        gbd = 211.737 aS
+        gbs = 0 S
+    vgsteff = 33.4018 mV
+       qinv = 16.0582 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 217.089 fCoul
+        qsi = 3.8751 fCoul
+        qdi = 2.26176 aCoul
+        qbi = 213.212 fCoul
+      cddbi = 4.44589 aF
+      cssbi = 124.084 fF
+      cggbi = 151.8 fF
+      cgsbi = -108.768 fF
+      cgdbi = 34.6474 aF
+      cbdbi = -13.5261 aF
+      cbsbi = -15.3857 fF
+      qsrco = 212.579 aCoul
+        ide = -749.566 nA
+        ige = 0 A
+        ise = -749.564 nA
+        ibe = 56.7171 pA
+        idb = 27.42 pA
+        isb = 27.42 pA
+        vsb = -440.724 mV
+        gmb = 4.02426 uS
+        vgt = 8.18896 mV
+       vdss = -68.5133 mV
+  vsat_marg = -927.129 mV
+  self_gain = 516.937
+       rout = 35.0689 MOhm
+       beff = 22.3554 mA/V^2
+        fug = 14.0509 MHz
+     vearly = 26.2864 V
+
+Instance: XOTA.M5a of nmos1
+Model: XOTA.M5a.nmos1_int.3
+Primitive: bsim3v3
+          d : V(voutm) = 368.589 mV
+          g : V(vb3) = 874 mV
+          s : V(XOTA.s5a) = 356.051 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 750.343 nA
+       isub = 30.2548e-24 A
+        vgs = 517.949 mV
+        vds = 12.5375 mV
+        vbs = -356.051 mV
+        vgb = 874 mV
+        vdb = 368.589 mV
+        vgd = 505.411 mV
+        vth = 557.557 mV
+      vdsat = 69.4906 mV
+     vfbeff = -968.485 mV
+         gm = 12.8288 uS
+        gds = 53.4257 uS
+       gmbs = 3.24263 uS
+    betaeff = 3.52552 mA/V^2
+        cjd = 3.43367 nF
+        cjs = 3.44847 nF
+         qb = -208.497 fCoul
+         qg = 218.185 fCoul
+         qd = -4.39043 fCoul
+        qbd = -1.36118 nCoul
+        qbs = -1.31804 nCoul
+        cgg = 136.67 fF
+        cgd = -24.2353 fF
+        cgs = -53.0127 fF
+        cgb = -59.4224 fF
+        cdg = -28.416 fF
+        cdd = 3.43371 nF
+        cds = -4.54115 fF
+        cdb = -3.43367 nF
+        csg = -49.3658 fF
+        csd = -10.3251 fF
+        css = 3.44854 nF
+        csb = -3.44848 nF
+        cbg = -58.8887 fF
+        cbd = -3.43367 nF
+        cbs = -3.44849 nF
+        cbb = 6.88222 nF
+        ron = 16.709 kOhm
+         id = 750.389 nA
+         is = -750.296 nA
+      ibulk = -93.3895 pA
+        ibs = -46.6948 pA
+        ibd = -46.6948 pA
+        pwr = 9.44123 nW
+   gmoverid = 17.0973 1/V
+       ueff = 40.1825e-03
+     cgsovl = 7.3704 fF
+     cgdovl = 7.3704 fF
+     cgbovl = 1.3633 fF
+         i1 = 750.389 nA
+         i3 = -750.296 nA
+         i4 = -93.3895 pA
+        gbd = 4.93356e-21 S
+        gbs = 0 S
+    vgsteff = 21.5432 mV
+       qinv = 105.216 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 209.451 fCoul
+        qsi = -1.4797 fCoul
+        qdi = -665.342 aCoul
+        qbi = -207.306 fCoul
+      cddbi = 30.9398 fF
+      cssbi = 63.0069 fF
+      cggbi = 120.566 fF
+      cgsbi = -45.6423 fF
+      cgdbi = -16.8649 fF
+      cbdbi = -3.74985 fF
+      cbsbi = -12.8234 fF
+      qsrco = -5.29719 fCoul
+        ide = 750.39 nA
+        ige = 0 A
+        ise = 750.39 nA
+        ibe = -94.1141 pA
+        idb = 46.6948 pA
+        isb = 46.6948 pA
+        vsb = 356.051 mV
+        gmb = 3.24263 uS
+        vgt = -39.6081 mV
+       vdss = 69.4906 mV
+  vsat_marg = -56.9531 mV
+  self_gain = 240.125e-03
+       rout = 18.7176 kOhm
+       beff = 956.639 uA/V^2
+        fug = 14.9394 MHz
+     vearly = 14.0455 mV
+
+Instance: XOTA.M5b of nmos1
+Model: XOTA.M5b.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.node_x) = 363.634 mV
+          g : V(vb3) = 874 mV
+          s : V(XOTA.s5b) = 352.188 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 187.569 nA
+       isub = 6.66383e-24 A
+        vgs = 521.812 mV
+        vds = 11.4457 mV
+        vbs = -352.188 mV
+        vgb = 874 mV
+        vdb = 363.634 mV
+        vgd = 510.366 mV
+        vth = 556.592 mV
+      vdsat = 71.0987 mV
+     vfbeff = -968.474 mV
+         gm = 3.13418 uS
+        gds = 14.8329 uS
+       gmbs = 793.409 nS
+    betaeff = 881.269 uA/V^2
+        cjd = 859.873 pF
+        cjs = 863.271 pF
+         qb = -52.106 fCoul
+         qg = 54.6323 fCoul
+         qd = -1.14425 fCoul
+        qbd = -336.039 pCoul
+        qbs = -326.178 pCoul
+        cgg = 36.0138 fF
+        cgd = -7.04198 fF
+        cgs = -14.5818 fF
+        cgb = -14.39 fF
+        cdg = -8.21439 fF
+        cdd = 859.884 pF
+        cds = -1.54418 fF
+        cdb = -859.874 pF
+        csg = -13.5454 fF
+        csd = -3.18252 fF
+        css = 863.29 pF
+        csb = -863.274 pF
+        cbg = -14.254 fF
+        cbd = -859.874 pF
+        cbs = -863.274 pF
+        cbb = 1.72316 nF
+        ron = 61.0215 kOhm
+         id = 187.58 nA
+         is = -187.557 nA
+      ibulk = -23.3474 pA
+        ibs = -11.6737 pA
+        ibd = -11.6737 pA
+        pwr = 2.15521 nW
+   gmoverid = 16.7095 1/V
+       ueff = 40.1774e-03
+     cgsovl = 1.8426 fF
+     cgdovl = 1.8426 fF
+     cgbovl = 340.824 aF
+         i1 = 187.58 nA
+         i3 = -187.557 nA
+         i4 = -23.3474 pA
+        gbd = 1.18781e-21 S
+        gbs = 0 S
+    vgsteff = 23.2617 mV
+       qinv = 28.6399 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 52.4326 fCoul
+        qsi = -420.559 aCoul
+        qdi = -203.847 aCoul
+        qbi = -51.8082 fCoul
+      cddbi = 9.53756 fF
+      cssbi = 17.865 fF
+      cggbi = 31.9878 fF
+      cgsbi = -12.7392 fF
+      cgdbi = -5.19938 fF
+      cbdbi = -1.15566 fF
+      cbsbi = -3.58163 fF
+      qsrco = -1.38205 fCoul
+        ide = 187.581 nA
+        ige = 0 A
+        ise = 187.581 nA
+        ibe = -24.0632 pA
+        idb = 11.6737 pA
+        isb = 11.6737 pA
+        vsb = 352.188 mV
+        gmb = 793.409 nS
+        vgt = -34.7797 mV
+       vdss = 71.0987 mV
+  vsat_marg = -59.653 mV
+  self_gain = 211.299e-03
+       rout = 67.4176 kOhm
+       beff = 310.146 uA/V^2
+        fug = 13.8508 MHz
+     vearly = 12.6462 mV
+
+Instance: XOTA.M5c of nmos1
+Model: XOTA.M5c.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.node_x) = 363.634 mV
+          g : V(vb5) = 752 mV
+          s : V(XOTA.s5c) = 301.46 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 561.949 nA
+       isub = 282.267e-24 A
+        vgs = 450.54 mV
+        vds = 62.1738 mV
+        vbs = -301.46 mV
+        vgb = 752 mV
+        vdb = 363.634 mV
+        vgd = 388.366 mV
+        vth = 543.756 mV
+      vdsat = 56.8431 mV
+     vfbeff = -969.059 mV
+         gm = 12.5557 uS
+        gds = 2.3596 uS
+       gmbs = 3.24068 uS
+    betaeff = 2.64924 mA/V^2
+        cjd = 2.57962 nF
+        cjs = 2.6369 nF
+         qb = -149.958 fCoul
+         qg = 154.858 fCoul
+         qd = -2.16513 fCoul
+        qbd = -1.00812 nCoul
+        qbs = -845.977 pCoul
+        cgg = 73.2896 fF
+        cgd = -5.73434 fF
+        cgs = -13.3675 fF
+        cgb = -54.1878 fF
+        cdg = -6.11791 fF
+        cdd = 2.57962 nF
+        cds = 341.22 aF
+        cdb = -2.57962 nF
+        csg = -13.2643 fF
+        csd = -136.758 aF
+        css = 2.63692 nF
+        csb = -2.63691 nF
+        cbg = -53.9075 fF
+        cbd = -2.57962 nF
+        cbs = -2.63691 nF
+        cbb = 5.21658 nF
+        ron = 110.64 kOhm
+         id = 561.984 nA
+         is = -561.914 nA
+      ibulk = -70.0421 pA
+        ibs = -35.0211 pA
+        ibd = -35.0211 pA
+        pwr = 34.9618 nW
+   gmoverid = 22.3431 1/V
+       ueff = 40.26e-03
+     cgsovl = 5.5278 fF
+     cgdovl = 5.5278 fF
+     cgbovl = 1.02247 fF
+         i1 = 561.984 nA
+         i3 = -561.914 nA
+         i4 = -70.0421 pA
+        gbd = 9.30212e-21 S
+        gbs = 0 S
+    vgsteff = 8.22062 mV
+       qinv = 21.4038 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 149.452 fCoul
+        qsi = -245.06 aCoul
+        qdi = -18.3138 aCoul
+        qbi = -149.189 fCoul
+      cddbi = 404.601 aF
+      cssbi = 9.91478 fF
+      cggbi = 61.2116 fF
+      cgsbi = -7.83974 fF
+      cgdbi = -206.539 aF
+      cbdbi = -61.3043 aF
+      cbsbi = -2.41627 fF
+      qsrco = -2.73556 fCoul
+        ide = 561.984 nA
+        ige = 0 A
+        ise = 561.984 nA
+        ibe = -70.7072 pA
+        idb = 35.0211 pA
+        isb = 35.0211 pA
+        vsb = 301.46 mV
+        gmb = 3.24068 uS
+        vgt = -93.2156 mV
+       vdss = 56.8431 mV
+  vsat_marg = 5.33063 mV
+  self_gain = 5.3211
+       rout = 423.801 kOhm
+       beff = 129.353 uA/V^2
+        fug = 27.2657 MHz
+     vearly = 238.169 mV
+
+Instance: XOTA.M6a of nmos1
+Model: XOTA.M5a.nmos1_int.3
+Primitive: bsim3v3
+          d : V(voutp) = 368.589 mV
+          g : V(vb3) = 874 mV
+          s : V(XOTA.s6a) = 356.051 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 750.343 nA
+       isub = 30.2548e-24 A
+        vgs = 517.949 mV
+        vds = 12.5375 mV
+        vbs = -356.051 mV
+        vgb = 874 mV
+        vdb = 368.589 mV
+        vgd = 505.411 mV
+        vth = 557.557 mV
+      vdsat = 69.4906 mV
+     vfbeff = -968.485 mV
+         gm = 12.8288 uS
+        gds = 53.4257 uS
+       gmbs = 3.24263 uS
+    betaeff = 3.52552 mA/V^2
+        cjd = 3.43367 nF
+        cjs = 3.44847 nF
+         qb = -208.497 fCoul
+         qg = 218.185 fCoul
+         qd = -4.39043 fCoul
+        qbd = -1.36118 nCoul
+        qbs = -1.31804 nCoul
+        cgg = 136.67 fF
+        cgd = -24.2353 fF
+        cgs = -53.0127 fF
+        cgb = -59.4224 fF
+        cdg = -28.416 fF
+        cdd = 3.43371 nF
+        cds = -4.54115 fF
+        cdb = -3.43367 nF
+        csg = -49.3658 fF
+        csd = -10.3251 fF
+        css = 3.44854 nF
+        csb = -3.44848 nF
+        cbg = -58.8887 fF
+        cbd = -3.43367 nF
+        cbs = -3.44849 nF
+        cbb = 6.88222 nF
+        ron = 16.709 kOhm
+         id = 750.389 nA
+         is = -750.296 nA
+      ibulk = -93.3895 pA
+        ibs = -46.6948 pA
+        ibd = -46.6948 pA
+        pwr = 9.44123 nW
+   gmoverid = 17.0973 1/V
+       ueff = 40.1825e-03
+     cgsovl = 7.3704 fF
+     cgdovl = 7.3704 fF
+     cgbovl = 1.3633 fF
+         i1 = 750.389 nA
+         i3 = -750.296 nA
+         i4 = -93.3895 pA
+        gbd = 4.93356e-21 S
+        gbs = 0 S
+    vgsteff = 21.5432 mV
+       qinv = 105.216 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 209.451 fCoul
+        qsi = -1.4797 fCoul
+        qdi = -665.342 aCoul
+        qbi = -207.306 fCoul
+      cddbi = 30.9398 fF
+      cssbi = 63.0069 fF
+      cggbi = 120.566 fF
+      cgsbi = -45.6423 fF
+      cgdbi = -16.8649 fF
+      cbdbi = -3.74985 fF
+      cbsbi = -12.8234 fF
+      qsrco = -5.29719 fCoul
+        ide = 750.39 nA
+        ige = 0 A
+        ise = 750.39 nA
+        ibe = -94.1141 pA
+        idb = 46.6948 pA
+        isb = 46.6948 pA
+        vsb = 356.051 mV
+        gmb = 3.24263 uS
+        vgt = -39.6081 mV
+       vdss = 69.4906 mV
+  vsat_marg = -56.9531 mV
+  self_gain = 240.125e-03
+       rout = 18.7176 kOhm
+       beff = 956.639 uA/V^2
+        fug = 14.9394 MHz
+     vearly = 14.0455 mV
+
+Instance: XOTA.M6b of nmos1
+Model: XOTA.M5b.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.node_xbar) = 363.634 mV
+          g : V(vb3) = 874 mV
+          s : V(XOTA.s6b) = 352.188 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 187.569 nA
+       isub = 6.66383e-24 A
+        vgs = 521.812 mV
+        vds = 11.4457 mV
+        vbs = -352.188 mV
+        vgb = 874 mV
+        vdb = 363.634 mV
+        vgd = 510.366 mV
+        vth = 556.592 mV
+      vdsat = 71.0987 mV
+     vfbeff = -968.474 mV
+         gm = 3.13418 uS
+        gds = 14.8329 uS
+       gmbs = 793.409 nS
+    betaeff = 881.269 uA/V^2
+        cjd = 859.873 pF
+        cjs = 863.271 pF
+         qb = -52.106 fCoul
+         qg = 54.6323 fCoul
+         qd = -1.14425 fCoul
+        qbd = -336.039 pCoul
+        qbs = -326.178 pCoul
+        cgg = 36.0138 fF
+        cgd = -7.04198 fF
+        cgs = -14.5818 fF
+        cgb = -14.39 fF
+        cdg = -8.21439 fF
+        cdd = 859.884 pF
+        cds = -1.54418 fF
+        cdb = -859.874 pF
+        csg = -13.5454 fF
+        csd = -3.18252 fF
+        css = 863.29 pF
+        csb = -863.274 pF
+        cbg = -14.254 fF
+        cbd = -859.874 pF
+        cbs = -863.274 pF
+        cbb = 1.72316 nF
+        ron = 61.0215 kOhm
+         id = 187.58 nA
+         is = -187.557 nA
+      ibulk = -23.3474 pA
+        ibs = -11.6737 pA
+        ibd = -11.6737 pA
+        pwr = 2.15521 nW
+   gmoverid = 16.7095 1/V
+       ueff = 40.1774e-03
+     cgsovl = 1.8426 fF
+     cgdovl = 1.8426 fF
+     cgbovl = 340.824 aF
+         i1 = 187.58 nA
+         i3 = -187.557 nA
+         i4 = -23.3474 pA
+        gbd = 1.18781e-21 S
+        gbs = 0 S
+    vgsteff = 23.2617 mV
+       qinv = 28.6399 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 52.4326 fCoul
+        qsi = -420.559 aCoul
+        qdi = -203.847 aCoul
+        qbi = -51.8082 fCoul
+      cddbi = 9.53756 fF
+      cssbi = 17.865 fF
+      cggbi = 31.9878 fF
+      cgsbi = -12.7392 fF
+      cgdbi = -5.19938 fF
+      cbdbi = -1.15566 fF
+      cbsbi = -3.58163 fF
+      qsrco = -1.38205 fCoul
+        ide = 187.581 nA
+        ige = 0 A
+        ise = 187.581 nA
+        ibe = -24.0632 pA
+        idb = 11.6737 pA
+        isb = 11.6737 pA
+        vsb = 352.188 mV
+        gmb = 793.409 nS
+        vgt = -34.7797 mV
+       vdss = 71.0987 mV
+  vsat_marg = -59.653 mV
+  self_gain = 211.299e-03
+       rout = 67.4176 kOhm
+       beff = 310.146 uA/V^2
+        fug = 13.8508 MHz
+     vearly = 12.6462 mV
+
+Instance: XOTA.M6c of nmos1
+Model: XOTA.M5c.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.node_xbar) = 363.634 mV
+          g : V(vb5) = 752 mV
+          s : V(XOTA.s6c) = 301.46 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 561.949 nA
+       isub = 282.267e-24 A
+        vgs = 450.54 mV
+        vds = 62.1738 mV
+        vbs = -301.46 mV
+        vgb = 752 mV
+        vdb = 363.634 mV
+        vgd = 388.366 mV
+        vth = 543.756 mV
+      vdsat = 56.8431 mV
+     vfbeff = -969.059 mV
+         gm = 12.5557 uS
+        gds = 2.3596 uS
+       gmbs = 3.24068 uS
+    betaeff = 2.64924 mA/V^2
+        cjd = 2.57962 nF
+        cjs = 2.6369 nF
+         qb = -149.958 fCoul
+         qg = 154.858 fCoul
+         qd = -2.16513 fCoul
+        qbd = -1.00812 nCoul
+        qbs = -845.977 pCoul
+        cgg = 73.2896 fF
+        cgd = -5.73434 fF
+        cgs = -13.3675 fF
+        cgb = -54.1878 fF
+        cdg = -6.11791 fF
+        cdd = 2.57962 nF
+        cds = 341.22 aF
+        cdb = -2.57962 nF
+        csg = -13.2643 fF
+        csd = -136.758 aF
+        css = 2.63692 nF
+        csb = -2.63691 nF
+        cbg = -53.9075 fF
+        cbd = -2.57962 nF
+        cbs = -2.63691 nF
+        cbb = 5.21658 nF
+        ron = 110.64 kOhm
+         id = 561.984 nA
+         is = -561.914 nA
+      ibulk = -70.0421 pA
+        ibs = -35.0211 pA
+        ibd = -35.0211 pA
+        pwr = 34.9618 nW
+   gmoverid = 22.3431 1/V
+       ueff = 40.26e-03
+     cgsovl = 5.5278 fF
+     cgdovl = 5.5278 fF
+     cgbovl = 1.02247 fF
+         i1 = 561.984 nA
+         i3 = -561.914 nA
+         i4 = -70.0421 pA
+        gbd = 9.30212e-21 S
+        gbs = 0 S
+    vgsteff = 8.22062 mV
+       qinv = 21.4038 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 149.452 fCoul
+        qsi = -245.06 aCoul
+        qdi = -18.3138 aCoul
+        qbi = -149.189 fCoul
+      cddbi = 404.601 aF
+      cssbi = 9.91478 fF
+      cggbi = 61.2116 fF
+      cgsbi = -7.83974 fF
+      cgdbi = -206.539 aF
+      cbdbi = -61.3043 aF
+      cbsbi = -2.41627 fF
+      qsrco = -2.73556 fCoul
+        ide = 561.984 nA
+        ige = 0 A
+        ise = 561.984 nA
+        ibe = -70.7072 pA
+        idb = 35.0211 pA
+        isb = 35.0211 pA
+        vsb = 301.46 mV
+        gmb = 3.24068 uS
+        vgt = -93.2156 mV
+       vdss = 56.8431 mV
+  vsat_marg = 5.33063 mV
+  self_gain = 5.3211
+       rout = 423.801 kOhm
+       beff = 129.353 uA/V^2
+        fug = 27.2657 MHz
+     vearly = 238.169 mV
+
+Instance: XOTA.M7a of nmos1
+Model: XOTA.M7a.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.s5a) = 356.051 mV
+          g : V(XOTA.node_x) = 363.634 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 750.202 nA
+       isub = 975.258e-24 A
+        vgs = 363.634 mV
+        vds = 356.051 mV
+        vbs = 0 V
+        vgb = 363.634 mV
+        vdb = 356.051 mV
+        vgd = 7.5826 mV
+        vth = 434.551 mV
+      vdsat = 59.3117 mV
+     vfbeff = -993.372 mV
+         gm = 16.4711 uS
+        gds = 17.9467 nS
+       gmbs = 4.914 uS
+    betaeff = 1.99553 mA/V^2
+        cjd = 6.89694 nF
+        cjs = 8.016 nF
+         qb = -2.57236 pCoul
+         qg = 2.59129 pCoul
+         qd = -211.503 aCoul
+        qbd = -2.63609 nCoul
+        qbs = -136.309 aCoul
+        cgg = 1.53388 pF
+        cgd = -21.9532 fF
+        cgs = -327.023 fF
+        cgb = -1.1849 pF
+        cdg = -23.4823 fF
+        cdd = 6.89697 nF
+        cds = 1.52616 fF
+        cdb = -6.89694 nF
+        csg = -345.976 fF
+        csd = -148.71 aF
+        css = 8.01645 nF
+        csb = -8.0161 nF
+        cbg = -1.16442 pF
+        cbd = -6.89694 nF
+        cbs = -8.01612 nF
+        cbb = 14.9142 nF
+        ron = 474.607 kOhm
+         id = 750.296 nA
+         is = -750.202 nA
+      ibulk = -93.3896 pA
+        ibs = -61.6622 aA
+        ibd = -93.3895 pA
+        pwr = 267.144 nW
+   gmoverid = 21.9556 1/V
+       ueff = 38.4744e-03
+     cgsovl = 22.1408 fF
+     cgdovl = 22.1408 fF
+     cgbovl = 13.7766 fF
+         i1 = 750.296 nA
+         i3 = -750.202 nA
+         i4 = -93.3896 pA
+        gbd = 3.26841e-21 S
+        gbs = 3.62621 nS
+    vgsteff = 12.6368 mV
+       qinv = 19.5492 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 2.57806 pCoul
+        qsi = -10.6695 fCoul
+        qdi = -43.6176 aCoul
+        qbi = -2.56735 pCoul
+      cddbi = 227.238 aF
+      cssbi = 423.416 fF
+      cggbi = 1.47582 pF
+      cgsbi = -304.882 fF
+      cgdbi = 187.647 aF
+      cbdbi = -266.176 aF
+      cbsbi = -120.059 fF
+      qsrco = -18.7207 fCoul
+        ide = 750.296 nA
+        ige = 0 A
+        ise = 750.296 nA
+        ibe = -93.7456 pA
+        idb = 93.3895 pA
+        isb = 61.6622 aA
+        vsb = -0 V
+        gmb = 4.914 uS
+        vgt = -70.9178 mV
+       vdss = 59.3117 mV
+  vsat_marg = 296.739 mV
+  self_gain = 917.779
+       rout = 55.7205 MOhm
+       beff = 298.368 uA/V^2
+        fug = 1.70904 MHz
+     vearly = 41.8069 V
+
+Instance: XOTA.M7b of nmos1
+Model: XOTA.M7b.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.s5b) = 352.188 mV
+          g : V(XOTA.node_xbar) = 363.634 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 187.533 nA
+       isub = 240.658e-24 A
+        vgs = 363.634 mV
+        vds = 352.188 mV
+        vbs = 0 V
+        vgb = 363.634 mV
+        vdb = 352.188 mV
+        vgd = 11.4457 mV
+        vth = 434.552 mV
+      vdsat = 59.3115 mV
+     vfbeff = -993.371 mV
+         gm = 4.11741 uS
+        gds = 4.537 nS
+       gmbs = 1.22839 uS
+    betaeff = 498.882 uA/V^2
+        cjd = 1.72654 nF
+        cjs = 2.004 nF
+         qb = -643.089 fCoul
+         qg = 647.843 fCoul
+         qd = -74.4816 aCoul
+        qbd = -652.356 pCoul
+        qbs = -34.0741 aCoul
+        cgg = 383.472 fF
+        cgd = -5.4893 fF
+        cgs = -81.7581 fF
+        cgb = -296.224 fF
+        cdg = -5.87748 fF
+        cdd = 1.72655 nF
+        cds = 388.803 aF
+        cdb = -1.72654 nF
+        csg = -86.4898 fF
+        csd = -37.7608 aF
+        css = 2.00411 nF
+        csb = -2.00403 nF
+        cbg = -291.104 fF
+        cbd = -1.72654 nF
+        cbs = -2.00403 nF
+        cbb = 3.73086 nF
+        ron = 1.878 MOhm
+         id = 187.557 nA
+         is = -187.533 nA
+      ibulk = -23.3474 pA
+        ibs = -15.4141 aA
+        ibd = -23.3474 pA
+        pwr = 66.0551 nW
+   gmoverid = 21.9556 1/V
+       ueff = 38.4744e-03
+     cgsovl = 5.5352 fF
+     cgdovl = 5.5352 fF
+     cgbovl = 3.44416 fF
+         i1 = 187.557 nA
+         i3 = -187.533 nA
+         i4 = -23.3474 pA
+        gbd = 816.89e-24 S
+        gbs = 906.552 pS
+    vgsteff = 12.6366 mV
+       qinv = 4.88914 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 644.515 fCoul
+        qsi = -2.66724 fCoul
+        qdi = -11.1272 aCoul
+        qbi = -641.836 fCoul
+      cddbi = 58.5611 aF
+      cssbi = 105.849 fF
+      cggbi = 368.957 fF
+      cgsbi = -76.2229 fF
+      cgdbi = 45.8982 aF
+      cbdbi = -66.6985 aF
+      cbsbi = -30.0147 fF
+      qsrco = -4.68003 fCoul
+        ide = 187.557 nA
+        ige = 0 A
+        ise = 187.557 nA
+        ibe = -23.6996 pA
+        idb = 23.3474 pA
+        isb = 15.4141 aA
+        vsb = -0 V
+        gmb = 1.22839 uS
+        vgt = -70.9187 mV
+       vdss = 59.3115 mV
+  vsat_marg = 292.876 mV
+  self_gain = 907.517
+       rout = 220.41 MOhm
+       beff = 74.5834 uA/V^2
+        fug = 1.70888 MHz
+     vearly = 41.3394 V
+
+Instance: XOTA.M7c of nmos1
+Model: XOTA.M7c.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.s5c) = 301.46 mV
+          g : V(XOTA.node_x) = 363.634 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 561.844 nA
+       isub = 597.894e-24 A
+        vgs = 363.634 mV
+        vds = 301.46 mV
+        vbs = 0 V
+        vgb = 363.634 mV
+        vdb = 301.46 mV
+        vgd = 62.1738 mV
+        vth = 434.564 mV
+      vdsat = 59.3091 mV
+     vfbeff = -993.359 mV
+         gm = 12.3358 uS
+        gds = 16.5295 nS
+       gmbs = 3.68031 uS
+    betaeff = 1.49664 mA/V^2
+        cjd = 5.27381 nF
+        cjs = 6.012 nF
+         qb = -1.92926 pCoul
+         qg = 1.94437 pCoul
+         qd = -1.07689 fCoul
+        qbd = -1.69195 nCoul
+        qbs = -102.085 aCoul
+        cgg = 1.15056 pF
+        cgd = -16.5226 fF
+        cgs = -245.406 fF
+        cgb = -888.631 fF
+        cdg = -17.9759 fF
+        cdd = 5.27383 nF
+        cds = 1.52083 fF
+        cdb = -5.27381 nF
+        csg = -259.275 fF
+        csd = -144.748 aF
+        css = 6.01234 nF
+        csb = -6.01208 nF
+        cbg = -873.309 fF
+        cbd = -5.27381 nF
+        cbs = -6.01209 nF
+        cbb = 11.2868 nF
+        ron = 536.555 kOhm
+         id = 561.914 nA
+         is = -561.844 nA
+      ibulk = -70.0422 pA
+        ibs = -46.1802 aA
+        ibd = -70.0421 pA
+        pwr = 169.394 nW
+   gmoverid = 21.956 1/V
+       ueff = 38.4744e-03
+     cgsovl = 16.6056 fF
+     cgdovl = 16.6056 fF
+     cgbovl = 10.3325 fF
+         i1 = 561.914 nA
+         i3 = -561.844 nA
+         i4 = -70.0422 pA
+        gbd = 2.44084e-21 S
+        gbs = 2.71966 nS
+    vgsteff = 12.634 mV
+       qinv = 14.7562 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 1.93354 pCoul
+        qsi = -7.99526 fCoul
+        qdi = -44.4611 aCoul
+        qbi = -1.9255 pCoul
+      cddbi = 270.135 aF
+      cssbi = 317.324 fF
+      cggbi = 1.10702 pF
+      cgsbi = -228.8 fF
+      cgdbi = 83.0404 aF
+      cbdbi = -208.427 aF
+      cbsbi = -90.0449 fF
+      qsrco = -14.0336 fCoul
+        ide = 561.914 nA
+        ige = 0 A
+        ise = 561.914 nA
+        ibe = -70.3436 pA
+        idb = 70.0421 pA
+        isb = 46.1802 aA
+        vsb = -0 V
+        gmb = 3.68031 uS
+        vgt = -70.9301 mV
+       vdss = 59.3091 mV
+  vsat_marg = 242.151 mV
+  self_gain = 746.293
+       rout = 60.498 MOhm
+       beff = 223.377 uA/V^2
+        fug = 1.70639 MHz
+     vearly = 33.9947 V
+
+Instance: XOTA.M8a of nmos1
+Model: XOTA.M7a.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.s6a) = 356.051 mV
+          g : V(XOTA.node_xbar) = 363.634 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 750.202 nA
+       isub = 975.258e-24 A
+        vgs = 363.634 mV
+        vds = 356.051 mV
+        vbs = 0 V
+        vgb = 363.634 mV
+        vdb = 356.051 mV
+        vgd = 7.5826 mV
+        vth = 434.551 mV
+      vdsat = 59.3117 mV
+     vfbeff = -993.372 mV
+         gm = 16.4711 uS
+        gds = 17.9467 nS
+       gmbs = 4.914 uS
+    betaeff = 1.99553 mA/V^2
+        cjd = 6.89694 nF
+        cjs = 8.016 nF
+         qb = -2.57236 pCoul
+         qg = 2.59129 pCoul
+         qd = -211.503 aCoul
+        qbd = -2.63609 nCoul
+        qbs = -136.309 aCoul
+        cgg = 1.53388 pF
+        cgd = -21.9532 fF
+        cgs = -327.023 fF
+        cgb = -1.1849 pF
+        cdg = -23.4823 fF
+        cdd = 6.89697 nF
+        cds = 1.52616 fF
+        cdb = -6.89694 nF
+        csg = -345.976 fF
+        csd = -148.71 aF
+        css = 8.01645 nF
+        csb = -8.0161 nF
+        cbg = -1.16442 pF
+        cbd = -6.89694 nF
+        cbs = -8.01612 nF
+        cbb = 14.9142 nF
+        ron = 474.607 kOhm
+         id = 750.296 nA
+         is = -750.202 nA
+      ibulk = -93.3896 pA
+        ibs = -61.6622 aA
+        ibd = -93.3895 pA
+        pwr = 267.144 nW
+   gmoverid = 21.9556 1/V
+       ueff = 38.4744e-03
+     cgsovl = 22.1408 fF
+     cgdovl = 22.1408 fF
+     cgbovl = 13.7766 fF
+         i1 = 750.296 nA
+         i3 = -750.202 nA
+         i4 = -93.3896 pA
+        gbd = 3.26841e-21 S
+        gbs = 3.62621 nS
+    vgsteff = 12.6368 mV
+       qinv = 19.5492 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 2.57806 pCoul
+        qsi = -10.6695 fCoul
+        qdi = -43.6176 aCoul
+        qbi = -2.56735 pCoul
+      cddbi = 227.238 aF
+      cssbi = 423.416 fF
+      cggbi = 1.47582 pF
+      cgsbi = -304.882 fF
+      cgdbi = 187.647 aF
+      cbdbi = -266.176 aF
+      cbsbi = -120.059 fF
+      qsrco = -18.7207 fCoul
+        ide = 750.296 nA
+        ige = 0 A
+        ise = 750.296 nA
+        ibe = -93.7456 pA
+        idb = 93.3895 pA
+        isb = 61.6622 aA
+        vsb = -0 V
+        gmb = 4.914 uS
+        vgt = -70.9178 mV
+       vdss = 59.3117 mV
+  vsat_marg = 296.739 mV
+  self_gain = 917.779
+       rout = 55.7205 MOhm
+       beff = 298.368 uA/V^2
+        fug = 1.70904 MHz
+     vearly = 41.8069 V
+
+Instance: XOTA.M8b of nmos1
+Model: XOTA.M7b.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.s6b) = 352.188 mV
+          g : V(XOTA.node_x) = 363.634 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 187.533 nA
+       isub = 240.658e-24 A
+        vgs = 363.634 mV
+        vds = 352.188 mV
+        vbs = 0 V
+        vgb = 363.634 mV
+        vdb = 352.188 mV
+        vgd = 11.4457 mV
+        vth = 434.552 mV
+      vdsat = 59.3115 mV
+     vfbeff = -993.371 mV
+         gm = 4.11741 uS
+        gds = 4.537 nS
+       gmbs = 1.22839 uS
+    betaeff = 498.882 uA/V^2
+        cjd = 1.72654 nF
+        cjs = 2.004 nF
+         qb = -643.089 fCoul
+         qg = 647.843 fCoul
+         qd = -74.4816 aCoul
+        qbd = -652.356 pCoul
+        qbs = -34.0741 aCoul
+        cgg = 383.472 fF
+        cgd = -5.4893 fF
+        cgs = -81.7581 fF
+        cgb = -296.224 fF
+        cdg = -5.87748 fF
+        cdd = 1.72655 nF
+        cds = 388.803 aF
+        cdb = -1.72654 nF
+        csg = -86.4898 fF
+        csd = -37.7608 aF
+        css = 2.00411 nF
+        csb = -2.00403 nF
+        cbg = -291.104 fF
+        cbd = -1.72654 nF
+        cbs = -2.00403 nF
+        cbb = 3.73086 nF
+        ron = 1.878 MOhm
+         id = 187.557 nA
+         is = -187.533 nA
+      ibulk = -23.3474 pA
+        ibs = -15.4141 aA
+        ibd = -23.3474 pA
+        pwr = 66.0551 nW
+   gmoverid = 21.9556 1/V
+       ueff = 38.4744e-03
+     cgsovl = 5.5352 fF
+     cgdovl = 5.5352 fF
+     cgbovl = 3.44416 fF
+         i1 = 187.557 nA
+         i3 = -187.533 nA
+         i4 = -23.3474 pA
+        gbd = 816.89e-24 S
+        gbs = 906.552 pS
+    vgsteff = 12.6366 mV
+       qinv = 4.88914 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 644.515 fCoul
+        qsi = -2.66724 fCoul
+        qdi = -11.1272 aCoul
+        qbi = -641.836 fCoul
+      cddbi = 58.5611 aF
+      cssbi = 105.849 fF
+      cggbi = 368.957 fF
+      cgsbi = -76.2229 fF
+      cgdbi = 45.8982 aF
+      cbdbi = -66.6985 aF
+      cbsbi = -30.0147 fF
+      qsrco = -4.68003 fCoul
+        ide = 187.557 nA
+        ige = 0 A
+        ise = 187.557 nA
+        ibe = -23.6996 pA
+        idb = 23.3474 pA
+        isb = 15.4141 aA
+        vsb = -0 V
+        gmb = 1.22839 uS
+        vgt = -70.9187 mV
+       vdss = 59.3115 mV
+  vsat_marg = 292.876 mV
+  self_gain = 907.517
+       rout = 220.41 MOhm
+       beff = 74.5834 uA/V^2
+        fug = 1.70888 MHz
+     vearly = 41.3394 V
+
+Instance: XOTA.M8c of nmos1
+Model: XOTA.M7c.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.s6c) = 301.46 mV
+          g : V(XOTA.node_xbar) = 363.634 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 561.844 nA
+       isub = 597.894e-24 A
+        vgs = 363.634 mV
+        vds = 301.46 mV
+        vbs = 0 V
+        vgb = 363.634 mV
+        vdb = 301.46 mV
+        vgd = 62.1738 mV
+        vth = 434.564 mV
+      vdsat = 59.3091 mV
+     vfbeff = -993.359 mV
+         gm = 12.3358 uS
+        gds = 16.5295 nS
+       gmbs = 3.68031 uS
+    betaeff = 1.49664 mA/V^2
+        cjd = 5.27381 nF
+        cjs = 6.012 nF
+         qb = -1.92926 pCoul
+         qg = 1.94437 pCoul
+         qd = -1.07689 fCoul
+        qbd = -1.69195 nCoul
+        qbs = -102.085 aCoul
+        cgg = 1.15056 pF
+        cgd = -16.5226 fF
+        cgs = -245.406 fF
+        cgb = -888.631 fF
+        cdg = -17.9759 fF
+        cdd = 5.27383 nF
+        cds = 1.52083 fF
+        cdb = -5.27381 nF
+        csg = -259.275 fF
+        csd = -144.748 aF
+        css = 6.01234 nF
+        csb = -6.01208 nF
+        cbg = -873.309 fF
+        cbd = -5.27381 nF
+        cbs = -6.01209 nF
+        cbb = 11.2868 nF
+        ron = 536.555 kOhm
+         id = 561.914 nA
+         is = -561.844 nA
+      ibulk = -70.0422 pA
+        ibs = -46.1802 aA
+        ibd = -70.0421 pA
+        pwr = 169.394 nW
+   gmoverid = 21.956 1/V
+       ueff = 38.4744e-03
+     cgsovl = 16.6056 fF
+     cgdovl = 16.6056 fF
+     cgbovl = 10.3325 fF
+         i1 = 561.914 nA
+         i3 = -561.844 nA
+         i4 = -70.0422 pA
+        gbd = 2.44084e-21 S
+        gbs = 2.71966 nS
+    vgsteff = 12.634 mV
+       qinv = 14.7562 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 1.93354 pCoul
+        qsi = -7.99526 fCoul
+        qdi = -44.4611 aCoul
+        qbi = -1.9255 pCoul
+      cddbi = 270.135 aF
+      cssbi = 317.324 fF
+      cggbi = 1.10702 pF
+      cgsbi = -228.8 fF
+      cgdbi = 83.0404 aF
+      cbdbi = -208.427 aF
+      cbsbi = -90.0449 fF
+      qsrco = -14.0336 fCoul
+        ide = 561.914 nA
+        ige = 0 A
+        ise = 561.914 nA
+        ibe = -70.3436 pA
+        idb = 70.0421 pA
+        isb = 46.1802 aA
+        vsb = -0 V
+        gmb = 3.68031 uS
+        vgt = -70.9301 mV
+       vdss = 59.3091 mV
+  vsat_marg = 242.151 mV
+  self_gain = 746.293
+       rout = 60.498 MOhm
+       beff = 223.377 uA/V^2
+        fug = 1.70639 MHz
+     vearly = 33.9947 V
+
+Instance: XOTA.M9 of pmos1
+Model: XOTA.M9.pmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.y1) = 1.7241 V
+          g : V(vb1) = 1.203 V
+          s : V(vdd) = 1.8 V
+          b : V(vdd) = 1.8 V
+     region = triode
+   reversed = no
+        ids = -863.973 nA
+       isub = -1.93538e-21 A
+        vgs = -597 mV
+        vds = -75.9048 mV
+        vbs = 0 V
+        vgb = -597 mV
+        vdb = -75.9048 mV
+        vgd = -521.095 mV
+        vth = -438.257 mV
+      vdsat = -166.122 mV
+     vfbeff = -984.087 mV
+         gm = 6.26502 uS
+        gds = 7.91328 uS
+       gmbs = 2.11242 uS
+    betaeff = 98.0691 uA/V^2
+        cjd = 1.06221 nF
+        cjs = 1.1022 nF
+         qb = -26.9135 fCoul
+         qg = 34.2302 fCoul
+         qd = -1.78971 fCoul
+        qbd = 82.114 pCoul
+        qbs = 457.09 aCoul
+        cgg = 49.0379 fF
+        cgd = -11.2559 fF
+        cgs = -36.9434 fF
+        cgb = -838.642 aF
+        cdg = -16.8616 fF
+        cdd = 1.06223 nF
+        cds = -2.21027 fF
+        cdb = -1.06221 nF
+        csg = -29.252 fF
+        csd = -7.68587 fF
+        css = 1.10225 nF
+        csb = -1.10221 nF
+        cbg = -2.92423 fF
+        cbd = -1.06221 nF
+        cbs = -1.10221 nF
+        cbb = 2.16442 nF
+        ron = 87.8556 kOhm
+         id = -863.98 nA
+         is = 863.973 nA
+      ibulk = 6.85512 pA
+        ibs = 110.713 aA
+        ibd = 6.855 pA
+        pwr = 65.5802 nW
+   gmoverid = 7.2514 1/V
+       ueff = 7.4586e-03
+     cgsovl = 980.1 aF
+     cgdovl = 980.1 aF
+     cgbovl = 511.754 aF
+         i1 = -863.98 nA
+         i3 = 863.973 nA
+         i4 = 6.85512 pA
+        gbd = 58.5668e-21 S
+        gbs = 266.967 pS
+    vgsteff = 161.646 mV
+       qinv = 18.8797 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 32.8289 fCoul
+        qsi = 4.94193 fCoul
+        qdi = 1.27898 fCoul
+        qbi = 26.6079 fCoul
+      cddbi = 23.0349 fF
+      cssbi = 45.0219 fF
+      cggbi = 46.5659 fF
+      cgsbi = -35.9633 fF
+      cgdbi = -10.2758 fF
+      cbdbi = -5.07331 fF
+      cbsbi = -6.84838 fF
+      qsrco = 4.35681 fCoul
+        ide = -863.98 nA
+        ige = 0 A
+        ise = -863.98 nA
+        ibe = 6.93102 pA
+        idb = 6.855 pA
+        isb = 110.713 aA
+        vsb = -0 V
+        gmb = 2.11242 uS
+        vgt = -158.743 mV
+       vdss = -166.122 mV
+  vsat_marg = 90.2172 mV
+  self_gain = 791.709e-03
+       rout = 126.37 kOhm
+       beff = 68.5714 uA/V^2
+        fug = 20.3334 MHz
+     vearly = 109.181 mV
+
+Instance: XOTA.M10 of pmos1
+Model: XOTA.M9.pmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.y2) = 1.7241 V
+          g : V(vb1) = 1.203 V
+          s : V(vdd) = 1.8 V
+          b : V(vdd) = 1.8 V
+     region = triode
+   reversed = no
+        ids = -863.973 nA
+       isub = -1.93538e-21 A
+        vgs = -597 mV
+        vds = -75.9048 mV
+        vbs = 0 V
+        vgb = -597 mV
+        vdb = -75.9048 mV
+        vgd = -521.095 mV
+        vth = -438.257 mV
+      vdsat = -166.122 mV
+     vfbeff = -984.087 mV
+         gm = 6.26502 uS
+        gds = 7.91328 uS
+       gmbs = 2.11242 uS
+    betaeff = 98.0691 uA/V^2
+        cjd = 1.06221 nF
+        cjs = 1.1022 nF
+         qb = -26.9135 fCoul
+         qg = 34.2302 fCoul
+         qd = -1.78971 fCoul
+        qbd = 82.114 pCoul
+        qbs = 457.09 aCoul
+        cgg = 49.0379 fF
+        cgd = -11.2559 fF
+        cgs = -36.9434 fF
+        cgb = -838.642 aF
+        cdg = -16.8616 fF
+        cdd = 1.06223 nF
+        cds = -2.21027 fF
+        cdb = -1.06221 nF
+        csg = -29.252 fF
+        csd = -7.68587 fF
+        css = 1.10225 nF
+        csb = -1.10221 nF
+        cbg = -2.92423 fF
+        cbd = -1.06221 nF
+        cbs = -1.10221 nF
+        cbb = 2.16442 nF
+        ron = 87.8556 kOhm
+         id = -863.98 nA
+         is = 863.973 nA
+      ibulk = 6.85512 pA
+        ibs = 110.713 aA
+        ibd = 6.855 pA
+        pwr = 65.5802 nW
+   gmoverid = 7.2514 1/V
+       ueff = 7.4586e-03
+     cgsovl = 980.1 aF
+     cgdovl = 980.1 aF
+     cgbovl = 511.754 aF
+         i1 = -863.98 nA
+         i3 = 863.973 nA
+         i4 = 6.85512 pA
+        gbd = 58.5668e-21 S
+        gbs = 266.967 pS
+    vgsteff = 161.646 mV
+       qinv = 18.8797 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 32.8289 fCoul
+        qsi = 4.94193 fCoul
+        qdi = 1.27898 fCoul
+        qbi = 26.6079 fCoul
+      cddbi = 23.0349 fF
+      cssbi = 45.0219 fF
+      cggbi = 46.5659 fF
+      cgsbi = -35.9633 fF
+      cgdbi = -10.2758 fF
+      cbdbi = -5.07331 fF
+      cbsbi = -6.84838 fF
+      qsrco = 4.35681 fCoul
+        ide = -863.98 nA
+        ige = 0 A
+        ise = -863.98 nA
+        ibe = 6.93102 pA
+        idb = 6.855 pA
+        isb = 110.713 aA
+        vsb = -0 V
+        gmb = 2.11242 uS
+        vgt = -158.743 mV
+       vdss = -166.122 mV
+  vsat_marg = 90.2172 mV
+  self_gain = 791.709e-03
+       rout = 126.37 kOhm
+       beff = 68.5714 uA/V^2
+        fug = 20.3334 MHz
+     vearly = 109.181 mV
+
+Instance: XOTA.M11 of nmos1
+Model: XOTA.M11.nmos1_int.1
+Primitive: bsim3v3
+          d : V(XOTA.s11) = 484.344 mV
+          g : V(vb3) = 874 mV
+          s : V(XOTA.scmfb) = 379.415 mV
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 227.133 nA
+       isub = 1.32216e-21 A
+        vgs = 494.585 mV
+        vds = 104.929 mV
+        vbs = -379.415 mV
+        vgb = 874 mV
+        vdb = 484.344 mV
+        vgd = 389.656 mV
+        vth = 599.065 mV
+      vdsat = 50.1525 mV
+     vfbeff = -952.991 mV
+         gm = 5.4587 uS
+        gds = 198.577 nS
+       gmbs = 1.34643 uS
+    betaeff = 1.55351 mA/V^2
+        cjd = 826.851 pF
+        cjs = 855.269 pF
+         qb = -5.1306 fCoul
+         qg = 5.78511 fCoul
+         qd = -285.682 aCoul
+        qbd = -437.792 pCoul
+        qbs = -349.573 pCoul
+        cgg = 3.46269 fF
+        cgd = -733.091 aF
+        cgs = -932.698 aF
+        cgb = -1.7969 fF
+        cdg = -739.389 aF
+        cdd = 826.851 pF
+        cds = 5.22278 aF
+        cdb = -826.851 pF
+        csg = -931.254 aF
+        csd = -1.19567 aF
+        css = 855.27 pF
+        csb = -855.269 pF
+        cbg = -1.79204 fF
+        cbd = -826.851 pF
+        cbs = -855.269 pF
+        cbb = 1.68212 nF
+        ron = 461.973 kOhm
+         id = 227.144 nA
+         is = -227.121 nA
+      ibulk = -23.3474 pA
+        ibs = -11.6737 pA
+        ibd = -11.6737 pA
+        pwr = 23.8429 nW
+   gmoverid = 24.0331 1/V
+       ueff = 41.8075e-03
+     cgsovl = 732.6 aF
+     cgdovl = 732.6 aF
+     cgbovl = 81.8393 aF
+         i1 = 227.144 nA
+         i3 = -227.121 nA
+         i4 = -23.3474 pA
+        gbd = 20.6619e-21 S
+        gbs = 0 S
+    vgsteff = 5.79578 mV
+       qinv = 7.85143 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 5.06579 fCoul
+        qsi = -6.50154 aCoul
+        qdi = -220.02e-21 Coul
+        qbi = -5.05907 fCoul
+      cddbi = 3.28875 aF
+      cssbi = 250.25 aF
+      cggbi = 1.91565 fF
+      cgsbi = -200.098 aF
+      cgdbi = -490.779e-21 F
+      cbdbi = -1.6023 aF
+      cbsbi = -55.3749 aF
+      qsrco = -368.835 aCoul
+        ide = 227.145 nA
+        ige = 0 A
+        ise = 227.145 nA
+        ibe = -24.2111 pA
+        idb = 11.6737 pA
+        isb = 11.6737 pA
+        vsb = 379.415 mV
+        gmb = 1.34643 uS
+        vgt = -104.479 mV
+       vdss = 50.1525 mV
+  vsat_marg = 54.7767 mV
+  self_gain = 27.4891
+       rout = 5.03583 MOhm
+       beff = 41.6171 uA/V^2
+        fug = 250.898 MHz
+     vearly = 1.14386 V
+
+Instance: XOTA.M12 of pmos1
+Model: XOTA.M12.pmos1_int.1
+Primitive: bsim3v3
+          d : V(XOTA.vs) = 1.36491 V
+          g : V(vb1) = 1.203 V
+          s : V(vdd) = 1.8 V
+          b : V(vdd) = 1.8 V
+     region = sat
+   reversed = no
+        ids = -1.49901 uA
+       isub = -592.831e-21 A
+        vgs = -597 mV
+        vds = -435.089 mV
+        vbs = 0 V
+        vgb = -597 mV
+        vdb = -435.089 mV
+        vgd = -161.911 mV
+        vth = -455.096 mV
+      vdsat = -151.955 mV
+     vfbeff = -1.01502 V
+         gm = 16.0894 uS
+        gds = 190.657 nS
+       gmbs = 5.38633 uS
+    betaeff = 128.414 uA/V^2
+        cjd = 921.851 pF
+        cjs = 1.1022 nF
+         qb = -2.39199 fCoul
+         qg = 3.01403 fCoul
+         qd = -53.3244 aCoul
+        qbd = 436.552 pCoul
+        qbs = 2.37918 fCoul
+        cgg = 4.00532 fF
+        cgd = -321.989 aF
+        cgs = -3.34382 fF
+        cgb = -339.515 aF
+        cdg = -334.473 aF
+        cdd = 921.851 pF
+        cds = 11.482 aF
+        cdb = -921.851 pF
+        csg = -2.94045 fF
+        csd = -3.31143 aF
+        css = 1.1022 nF
+        csb = -1.1022 nF
+        cbg = -730.398 aF
+        cbd = -921.851 pF
+        cbs = -1.1022 nF
+        cbb = 2.02405 nF
+        ron = 290.251 kOhm
+         id = -1.49902 uA
+         is = 1.49901 uA
+      ibulk = 6.85558 pA
+        ibs = 576.27 aA
+        ibd = 6.85501 pA
+        pwr = 652.206 nW
+   gmoverid = 10.7333 1/V
+       ueff = 6.90082e-03
+     cgsovl = 320.1 aF
+     cgdovl = 320.1 aF
+     cgbovl = 123.277 aF
+         i1 = -1.49902 uA
+         i3 = 1.49901 uA
+         i4 = 6.85558 pA
+        gbd = 2.09727 aS
+        gbs = 266.967 pS
+    vgsteff = 145.596 mV
+       qinv = 14.7984 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = -0 A
+      igisl = -0 A
+        qgi = 2.69751 fCoul
+        qsi = 377.621 aCoul
+        qdi = 1.49602 aCoul
+        qbi = 2.31839 fCoul
+      cddbi = 7.59735 aF
+      cssbi = 3.49441 fF
+      cggbi = 3.24185 fF
+      cgsbi = -3.02372 fF
+      cgdbi = -1.88861 aF
+      cbdbi = -2.39731 aF
+      cbsbi = -482.173 aF
+      qsrco = 186.522 aCoul
+        ide = -1.49902 uA
+        ige = 0 A
+        ise = -1.49902 uA
+        ibe = 7.29067 pA
+        idb = 6.855 pA
+        isb = 576.27 aA
+        vsb = -0 V
+        gmb = 5.38633 uS
+        vgt = -141.904 mV
+       vdss = -151.955 mV
+  vsat_marg = -283.134 mV
+  self_gain = 84.389
+       rout = 5.24502 MOhm
+       beff = 148.883 uA/V^2
+        fug = 639.325 MHz
+     vearly = 7.86238 V
+
+Instance: XOTA.M13 of nmos1
+Model: XOTA.M13.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.scmfb) = 379.415 mV
+          g : V(voutm) = 368.589 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 113.55 nA
+       isub = 814.723e-24 A
+        vgs = 368.589 mV
+        vds = 379.415 mV
+        vbs = 0 V
+        vgb = 368.589 mV
+        vdb = 379.415 mV
+        vgd = -10.8262 mV
+        vth = 459.52 mV
+      vdsat = 56.7298 mV
+     vfbeff = -965.363 mV
+         gm = 2.54994 uS
+        gds = 6.65337 nS
+       gmbs = 756.734 nS
+    betaeff = 441.752 uA/V^2
+        cjd = 855.269 pF
+        cjs = 1.002 nF
+         qb = -20.8856 fCoul
+         qg = 21.2633 fCoul
+         qd = 9.75635 aCoul
+        qbd = -349.573 pCoul
+        qbs = -61.8951 aCoul
+        cgg = 13.5269 fF
+        cgd = -915.621 aF
+        cgs = -2.39179 fF
+        cgb = -10.2195 fF
+        cdg = -923.09 aF
+        cdd = 855.27 pF
+        cds = 6.30406 aF
+        cdb = -855.269 pF
+        csg = -2.42872 fF
+        csd = -630.403e-21 F
+        css = 1.002 nF
+        csb = -1.002 nF
+        cbg = -10.1751 fF
+        cbd = -855.269 pF
+        cbs = -1.002 nF
+        cbb = 1.85728 nF
+        ron = 3.34138 MOhm
+         id = 113.562 nA
+         is = -113.55 nA
+      ibulk = -11.6737 pA
+        ibs = -27.9996 aA
+        ibd = -11.6737 pA
+        pwr = 43.0871 nW
+   gmoverid = 22.4564 1/V
+       ueff = 40.4417e-03
+     cgsovl = 917.6 aF
+     cgdovl = 917.6 aF
+     cgbovl = 340.824 aF
+         i1 = 113.562 nA
+         i3 = -113.55 nA
+         i4 = -11.6737 pA
+        gbd = 2.54659e-21 S
+        gbs = 453.276 pS
+    vgsteff = 8.88277 mV
+       qinv = 3.05024 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 20.8094 fCoul
+        qsi = -49.2253 aCoul
+        qdi = -177.683e-21 Coul
+        qbi = -20.76 fCoul
+      cddbi = 869.969e-21 F
+      cssbi = 1.97515 fF
+      cggbi = 11.3509 fF
+      cgsbi = -1.47419 fF
+      cgdbi = 1.97878 aF
+      cbdbi = -2.21834 aF
+      cbsbi = -507.257 aF
+      qsrco = -387.442 aCoul
+        ide = 113.563 nA
+        ige = 0 A
+        ise = 113.562 nA
+        ibe = -12.0531 pA
+        idb = 11.6737 pA
+        isb = 27.9996 aA
+        vsb = -0 V
+        gmb = 756.734 nS
+        vgt = -90.9313 mV
+       vdss = 56.7298 mV
+  vsat_marg = 322.685 mV
+  self_gain = 383.255
+       rout = 150.3 MOhm
+       beff = 27.4688 uA/V^2
+        fug = 30.0021 MHz
+     vearly = 17.0684 V
+
+Instance: XOTA.M14 of nmos1
+Model: XOTA.M13.nmos1_int.3
+Primitive: bsim3v3
+          d : V(XOTA.scmfb) = 379.415 mV
+          g : V(voutp) = 368.589 mV
+          s : V(gnd) = 0 V
+          b : V(gnd) = 0 V
+     region = subth
+   reversed = no
+        ids = 113.55 nA
+       isub = 814.723e-24 A
+        vgs = 368.589 mV
+        vds = 379.415 mV
+        vbs = 0 V
+        vgb = 368.589 mV
+        vdb = 379.415 mV
+        vgd = -10.8262 mV
+        vth = 459.52 mV
+      vdsat = 56.7298 mV
+     vfbeff = -965.363 mV
+         gm = 2.54994 uS
+        gds = 6.65337 nS
+       gmbs = 756.734 nS
+    betaeff = 441.752 uA/V^2
+        cjd = 855.269 pF
+        cjs = 1.002 nF
+         qb = -20.8856 fCoul
+         qg = 21.2633 fCoul
+         qd = 9.75635 aCoul
+        qbd = -349.573 pCoul
+        qbs = -61.8951 aCoul
+        cgg = 13.5269 fF
+        cgd = -915.621 aF
+        cgs = -2.39179 fF
+        cgb = -10.2195 fF
+        cdg = -923.09 aF
+        cdd = 855.27 pF
+        cds = 6.30406 aF
+        cdb = -855.269 pF
+        csg = -2.42872 fF
+        csd = -630.403e-21 F
+        css = 1.002 nF
+        csb = -1.002 nF
+        cbg = -10.1751 fF
+        cbd = -855.269 pF
+        cbs = -1.002 nF
+        cbb = 1.85728 nF
+        ron = 3.34138 MOhm
+         id = 113.562 nA
+         is = -113.55 nA
+      ibulk = -11.6737 pA
+        ibs = -27.9996 aA
+        ibd = -11.6737 pA
+        pwr = 43.0871 nW
+   gmoverid = 22.4564 1/V
+       ueff = 40.4417e-03
+     cgsovl = 917.6 aF
+     cgdovl = 917.6 aF
+     cgbovl = 340.824 aF
+         i1 = 113.562 nA
+         i3 = -113.55 nA
+         i4 = -11.6737 pA
+        gbd = 2.54659e-21 S
+        gbs = 453.276 pS
+    vgsteff = 8.88277 mV
+       qinv = 3.05024 uCoul
+        igd = 0 A
+        igs = 0 A
+        igb = 0 A
+       igcs = 0 A
+       igcd = 0 A
+      igidl = 0 A
+      igisl = 0 A
+        qgi = 20.8094 fCoul
+        qsi = -49.2253 aCoul
+        qdi = -177.683e-21 Coul
+        qbi = -20.76 fCoul
+      cddbi = 869.969e-21 F
+      cssbi = 1.97515 fF
+      cggbi = 11.3509 fF
+      cgsbi = -1.47419 fF
+      cgdbi = 1.97878 aF
+      cbdbi = -2.21834 aF
+      cbsbi = -507.257 aF
+      qsrco = -387.442 aCoul
+        ide = 113.563 nA
+        ige = 0 A
+        ise = 113.562 nA
+        ibe = -12.0531 pA
+        idb = 11.6737 pA
+        isb = 27.9996 aA
+        vsb = -0 V
+        gmb = 756.734 nS
+        vgt = -90.9313 mV
+       vdss = 56.7298 mV
+  vsat_marg = 322.685 mV
+  self_gain = 383.255
+       rout = 150.3 MOhm
+       beff = 27.4688 uA/V^2
+        fug = 30.0021 MHz
+     vearly = 17.0684 V
+
+Maximum and minimum parameter values for bsim3v3: 
+          max ids = 750.343 nA on XOTA.M5a of nmos1
+          min ids = -1.49901 uA on XOTA.M12 of pmos1
+        min |ids| = 113.55 nA on XOTA.M14 of nmos1
+         max isub = 1.12109 pA on XOTA.M2a of nmos1
+         min isub = -10.2437 fA on XOTA.M4a of pmos1
+       min |isub| = 6.66383e-24 A on XOTA.M5b of nmos1
+          max vgs = 521.812 mV on XOTA.M5b of nmos1
+          min vgs = -597 mV on XOTA.M9 of pmos1
+        min |vgs| = 363.634 mV on XOTA.M7a of nmos1
+          max vds = 1.23975 V on XOTA.M1a of nmos1
+          min vds = -1.35551 V on XOTA.M4a of pmos1
+        min |vds| = -5.63466 mV on XOTA.M1b of pmos1
+          max vbs = 440.724 mV on XOTA.M3b of pmos1
+          min vbs = -484.344 mV on XOTA.M1a of nmos1
+        min |vbs| = 0 V on XOTA.M1b of pmos1
+          max vgb = 900 mV on XOTA.M1a of nmos1
+          min vgb = -999 mV on XOTA.M3b of pmos1
+        min |vgb| = 363.634 mV on XOTA.M7a of nmos1
+          max vdb = 1.7241 V on XOTA.M1a of nmos1
+          min vdb = -1.43637 V on XOTA.M3b of pmos1
+        min |vdb| = -5.63466 mV on XOTA.M1b of pmos1
+          max vgd = 904.411 mV on XOTA.M4a of pmos1
+          min vgd = -824.095 mV on XOTA.M1a of nmos1
+        min |vgd| = 7.5826 mV on XOTA.M7a of nmos1
+          max vth = 629.448 mV on XOTA.M1a of nmos1
+          min vth = -566.465 mV on XOTA.M3b of pmos1
+        min |vth| = 434.551 mV on XOTA.M7a of nmos1
+        max vdsat = 71.0987 mV on XOTA.M5b of nmos1
+        min vdsat = -166.122 mV on XOTA.M9 of pmos1
+      min |vdsat| = 45.7665 mV on XOTA.M1a of nmos1
+       max vfbeff = -952.991 mV on XOTA.M11 of nmos1
+       min vfbeff = -1.10264 V on XOTA.M1b of pmos1
+           max gm = 16.4711 uS on XOTA.M7a of nmos1
+           min gm = 2.54994 uS on XOTA.M14 of nmos1
+          max gds = 127.378 uS on XOTA.M1b of pmos1
+          min gds = 4.537 nS on XOTA.M7b of nmos1
+         max gmbs = 5.38633 uS on XOTA.M12 of pmos1
+         min gmbs = 756.734 nS on XOTA.M14 of nmos1
+      max betaeff = 11.5823 mA/V^2 on XOTA.M1a of nmos1
+      min betaeff = 98.0691 uA/V^2 on XOTA.M9 of pmos1
+          max cjd = 6.89694 nF on XOTA.M8a of nmos1
+          min cjd = 826.851 pF on XOTA.M11 of nmos1
+          max cjs = 8.016 nF on XOTA.M7a of nmos1
+          min cjs = 855.269 pF on XOTA.M11 of nmos1
+           max qb = -2.39199 fCoul on XOTA.M12 of pmos1
+           min qb = -2.57236 pCoul on XOTA.M7a of nmos1
+           max qg = 2.59129 pCoul on XOTA.M7a of nmos1
+           min qg = 3.01403 fCoul on XOTA.M12 of pmos1
+           max qd = 5.93213 fCoul on XOTA.M4a of pmos1
+           min qd = -5.76739 fCoul on XOTA.M1b of pmos1
+         min |qd| = 9.75635 aCoul on XOTA.M13 of nmos1
+          max qbd = 4.96464 nCoul on XOTA.M3b of pmos1
+          min qbd = -3.97965 nCoul on XOTA.M1a of nmos1
+        min |qbd| = 37.2101 pCoul on XOTA.M1b of pmos1
+          max qbs = 1.76609 nCoul on XOTA.M3b of pmos1
+          min qbs = -1.31804 nCoul on XOTA.M5a of nmos1
+        min |qbs| = -34.0741 aCoul on XOTA.M7b of nmos1
+          max cgg = 1.53388 pF on XOTA.M7a of nmos1
+          min cgg = 3.46269 fF on XOTA.M11 of nmos1
+          max cgd = -321.989 aF on XOTA.M12 of pmos1
+          min cgd = -30.2704 fF on XOTA.M1b of pmos1
+          max cgs = -932.698 aF on XOTA.M11 of nmos1
+          min cgs = -327.023 fF on XOTA.M7a of nmos1
+          max cgb = -339.515 aF on XOTA.M12 of pmos1
+          min cgb = -1.1849 pF on XOTA.M7a of nmos1
+          max cdg = -334.473 aF on XOTA.M12 of pmos1
+          min cdg = -38.8977 fF on XOTA.M1b of pmos1
+          max cdd = 6.89697 nF on XOTA.M8a of nmos1
+          min cdd = 826.851 pF on XOTA.M11 of nmos1
+          max cds = 1.52616 fF on XOTA.M8a of nmos1
+          min cds = -13.6079 fF on XOTA.M1b of pmos1
+        min |cds| = 22.4749e-21 F on XOTA.M1a of nmos1
+          max cdb = -826.851 pF on XOTA.M11 of nmos1
+          min cdb = -6.89694 nF on XOTA.M8a of nmos1
+          max csg = -931.254 aF on XOTA.M11 of nmos1
+          min csg = -345.976 fF on XOTA.M7a of nmos1
+          max csd = -27.0769e-21 F on XOTA.M1a of nmos1
+          min csd = -17.6838 fF on XOTA.M1b of pmos1
+          max css = 8.01645 nF on XOTA.M7a of nmos1
+          min css = 855.27 pF on XOTA.M11 of nmos1
+          max csb = -855.269 pF on XOTA.M11 of nmos1
+          min csb = -8.0161 nF on XOTA.M7a of nmos1
+          max cbg = -730.398 aF on XOTA.M12 of pmos1
+          min cbg = -1.16442 pF on XOTA.M7a of nmos1
+          max cbd = -826.851 pF on XOTA.M11 of nmos1
+          min cbd = -6.89694 nF on XOTA.M8a of nmos1
+          max cbs = -855.269 pF on XOTA.M11 of nmos1
+          min cbs = -8.01612 nF on XOTA.M7a of nmos1
+          max cbb = 14.9142 nF on XOTA.M8a of nmos1
+          min cbb = 1.68212 nF on XOTA.M11 of nmos1
+          max ron = 10.8982 MOhm on XOTA.M1a of nmos1
+          min ron = 7.51789 kOhm on XOTA.M1b of pmos1
+           max id = 750.389 nA on XOTA.M5a of nmos1
+           min id = -1.49902 uA on XOTA.M12 of pmos1
+         min |id| = 113.562 nA on XOTA.M14 of nmos1
+           max is = 1.49901 uA on XOTA.M12 of pmos1
+           min is = -750.296 nA on XOTA.M5a of nmos1
+         min |is| = -113.55 nA on XOTA.M14 of nmos1
+        max ibulk = 54.8503 pA on XOTA.M3a of pmos1
+        min ibulk = -93.3896 pA on XOTA.M7a of nmos1
+      min |ibulk| = 6.85512 pA on XOTA.M9 of pmos1
+          max ibs = 27.42 pA on XOTA.M3a of pmos1
+          min ibs = -46.6948 pA on XOTA.M5a of nmos1
+        min |ibs| = -15.4141 aA on XOTA.M7b of nmos1
+          max ibd = 27.4303 pA on XOTA.M3a of pmos1
+          min ibd = -93.3895 pA on XOTA.M7a of nmos1
+        min |ibd| = 6.855 pA on XOTA.M9 of pmos1
+          max pwr = 1.01716 uW on XOTA.M4a of pmos1
+          min pwr = 2.15521 nW on XOTA.M5b of nmos1
+     max gmoverid = 28.7798 1/V on XOTA.M1a of nmos1
+     min gmoverid = 7.2514 1/V on XOTA.M9 of pmos1
+         max ueff = 41.8075e-03 on XOTA.M11 of nmos1
+         min ueff = 6.78268e-03 on XOTA.M1b of pmos1
+       max cgsovl = 22.1408 fF on XOTA.M7a of nmos1
+       min cgsovl = 320.1 aF on XOTA.M12 of pmos1
+       max cgdovl = 22.1408 fF on XOTA.M7a of nmos1
+       min cgdovl = 320.1 aF on XOTA.M12 of pmos1
+       max cgbovl = 13.7766 fF on XOTA.M7a of nmos1
+       min cgbovl = 81.8393 aF on XOTA.M11 of nmos1
+           max i1 = 750.389 nA on XOTA.M5a of nmos1
+           min i1 = -1.49902 uA on XOTA.M12 of pmos1
+         min |i1| = 113.562 nA on XOTA.M14 of nmos1
+           max i3 = 1.49901 uA on XOTA.M12 of pmos1
+           min i3 = -750.296 nA on XOTA.M5a of nmos1
+         min |i3| = -113.55 nA on XOTA.M14 of nmos1
+           max i4 = 54.8503 pA on XOTA.M3a of pmos1
+           min i4 = -93.3896 pA on XOTA.M7a of nmos1
+         min |i4| = 6.85512 pA on XOTA.M9 of pmos1
+          max gbd = 1.6018 nS on XOTA.M1b of pmos1
+          min gbd = 816.89e-24 S on XOTA.M7b of nmos1
+          max gbs = 3.62621 nS on XOTA.M7a of nmos1
+          min gbs = 0 S on XOTA.M1a of nmos1
+      max vgsteff = 161.646 mV on XOTA.M9 of pmos1
+      min vgsteff = 343.396 uV on XOTA.M1a of nmos1
+         max qinv = 228.911 uCoul on XOTA.M1b of pmos1
+         min qinv = 3.05024 uCoul on XOTA.M14 of nmos1
+              igd = 0 A (same value for all instances).
+              igs = 0 A (same value for all instances).
+              igb = 0 A (same value for all instances).
+             igcs = 0 A (same value for all instances).
+             igcd = 0 A (same value for all instances).
+            igidl = 0 A (same value for all instances).
+            igisl = 0 A (same value for all instances).
+          max qgi = 2.57806 pCoul on XOTA.M7a of nmos1
+          min qgi = 2.69751 fCoul on XOTA.M12 of pmos1
+          max qsi = 4.94193 fCoul on XOTA.M9 of pmos1
+          min qsi = -10.6695 fCoul on XOTA.M7a of nmos1
+        min |qsi| = -1.6057 aCoul on XOTA.M1a of nmos1
+          max qdi = 1.27898 fCoul on XOTA.M9 of pmos1
+          min qdi = -665.342 aCoul on XOTA.M6a of nmos1
+        min |qdi| = -597.691e-24 Coul on XOTA.M1a of nmos1
+          max qbi = 213.212 fCoul on XOTA.M3b of pmos1
+          min qbi = -2.56735 pCoul on XOTA.M7a of nmos1
+        min |qbi| = 2.31839 fCoul on XOTA.M12 of pmos1
+        max cddbi = 53.0112 fF on XOTA.M1b of pmos1
+        min cddbi = 931.405e-24 F on XOTA.M1a of nmos1
+        max cssbi = 423.416 fF on XOTA.M7a of nmos1
+        min cssbi = 62.9061 aF on XOTA.M1a of nmos1
+        max cggbi = 1.47582 pF on XOTA.M7a of nmos1
+        min cggbi = 1.91565 fF on XOTA.M11 of nmos1
+        max cgsbi = 110.464 aF on XOTA.M1a of nmos1
+        min cgsbi = -304.882 fF on XOTA.M7a of nmos1
+        max cgdbi = 187.647 aF on XOTA.M7a of nmos1
+        min cgdbi = -20.4298 fF on XOTA.M1b of pmos1
+      min |cgdbi| = -490.779e-21 F on XOTA.M11 of nmos1
+        max cbdbi = -1.6023 aF on XOTA.M11 of nmos1
+        min cbdbi = -14.8977 fF on XOTA.M1b of pmos1
+        max cbsbi = -55.3749 aF on XOTA.M11 of nmos1
+        min cbsbi = -120.059 fF on XOTA.M7a of nmos1
+        max qsrco = 4.35681 fCoul on XOTA.M9 of pmos1
+        min qsrco = -18.7207 fCoul on XOTA.M7a of nmos1
+      min |qsrco| = 186.522 aCoul on XOTA.M12 of pmos1
+          max ide = 750.39 nA on XOTA.M5a of nmos1
+          min ide = -1.49902 uA on XOTA.M12 of pmos1
+        min |ide| = 113.563 nA on XOTA.M14 of nmos1
+              ige = 0 A (same value for all instances).
+          max ise = 750.39 nA on XOTA.M5a of nmos1
+          min ise = -1.49902 uA on XOTA.M12 of pmos1
+        min |ise| = 113.562 nA on XOTA.M14 of nmos1
+          max ibe = 56.7171 pA on XOTA.M3b of pmos1
+          min ibe = -94.1141 pA on XOTA.M5a of nmos1
+        min |ibe| = 6.93102 pA on XOTA.M9 of pmos1
+          max idb = 93.3895 pA on XOTA.M7a of nmos1
+          min idb = 6.855 pA on XOTA.M9 of pmos1
+          max isb = 46.6948 pA on XOTA.M5a of nmos1
+          min isb = 15.4141 aA on XOTA.M7b of nmos1
+          max vsb = 484.344 mV on XOTA.M1a of nmos1
+          min vsb = -440.724 mV on XOTA.M3b of pmos1
+        min |vsb| = -0 V on XOTA.M1b of pmos1
+          max gmb = 5.38633 uS on XOTA.M12 of pmos1
+          min gmb = 756.734 nS on XOTA.M14 of nmos1
+          max vgt = 11.3562 mV on XOTA.M3a of pmos1
+          min vgt = -213.792 mV on XOTA.M1a of nmos1
+        min |vgt| = -6.72779 mV on XOTA.M1b of pmos1
+         max vdss = 71.0987 mV on XOTA.M5b of nmos1
+         min vdss = -166.122 mV on XOTA.M9 of pmos1
+       min |vdss| = 45.7665 mV on XOTA.M1a of nmos1
+    max vsat_marg = 1.19398 V on XOTA.M1a of nmos1
+    min vsat_marg = -1.28938 V on XOTA.M4a of pmos1
+  min |vsat_marg| = 5.33063 mV on XOTA.M5c of nmos1
+    max self_gain = 917.779 on XOTA.M7a of nmos1
+    min self_gain = 83.4136e-03 on XOTA.M1b of pmos1
+         max rout = 220.41 MOhm on XOTA.M7b of nmos1
+         min rout = 7.85063 kOhm on XOTA.M1b of pmos1
+         max beff = 33.1179 mA/V^2 on XOTA.M1b of pmos1
+         min beff = 4.9794 uA/V^2 on XOTA.M1a of nmos1
+          max fug = 639.325 MHz on XOTA.M12 of pmos1
+          min fug = 1.70639 MHz on XOTA.M7c of nmos1
+       max vearly = 41.8069 V on XOTA.M7a of nmos1
+       min vearly = 5.88412 mV on XOTA.M1b of pmos1
+
+
+Instance: CLm
+Model: capacitor
+Primitive: capacitor
+          1 : V(voutm) = 368.589 mV
+          2 : val(0) = 0 
+        cap = 1 pF
+
+Instance: CLp
+Model: capacitor
+Primitive: capacitor
+          1 : V(voutp) = 368.589 mV
+          2 : val(0) = 0 
+        cap = 1 pF
+
+Maximum and minimum parameter values for capacitor: 
+              cap = 1 pF (same value for all instances).
+
+
+Instance: Vb1
+Model: vsource
+Primitive: vsource
+          p : V(vb1) = 1.203 V
+          n : val(0) = 0 
+          v = 1.203 V
+          i = 0 A
+        pwr = 0 W
+
+Instance: Vb2
+Model: vsource
+Primitive: vsource
+          p : V(vb2) = 1.273 V
+          n : val(0) = 0 
+          v = 1.273 V
+          i = 0 A
+        pwr = 0 W
+
+Instance: Vb3
+Model: vsource
+Primitive: vsource
+          p : V(vb3) = 874 mV
+          n : val(0) = 0 
+          v = 874 mV
+          i = 0 A
+        pwr = 0 W
+
+Instance: Vb4
+Model: vsource
+Primitive: vsource
+          p : V(vb4) = 801 mV
+          n : val(0) = 0 
+          v = 801 mV
+          i = 0 A
+        pwr = 0 W
+
+Instance: Vb5
+Model: vsource
+Primitive: vsource
+          p : V(vb5) = 752 mV
+          n : val(0) = 0 
+          v = 752 mV
+          i = 0 A
+        pwr = 0 W
+
+Instance: Vdd
+Model: vsource
+Primitive: vsource
+          p : V(vdd) = 1.8 V
+          n : val(0) = 0 
+          v = 1.8 V
+          i = -3.2272 uA
+        pwr = -5.80896 uW
+
+Instance: Vgnd
+Model: vsource
+Primitive: vsource
+          p : V(gnd) = 0 V
+          n : val(0) = 0 
+          v = 0 V
+          i = 3.2272 uA
+        pwr = 0 W
+
+Instance: VinM
+Model: vsource
+Primitive: vsource
+          p : V(inm) = 900 mV
+          n : val(0) = 0 
+          v = 900 mV
+          i = 0 A
+        pwr = 0 W
+
+Instance: VinP
+Model: vsource
+Primitive: vsource
+          p : V(inp) = 900 mV
+          n : val(0) = 0 
+          v = 900 mV
+          i = 0 A
+        pwr = 0 W
+
+Maximum and minimum parameter values for vsource: 
+            max v = 1.8 V on Vdd
+            min v = 0 V on Vgnd
+            max i = 3.2272 uA on Vgnd
+            min i = -3.2272 uA on Vdd
+          min |i| = 0 A on Vb1
+          max pwr = 0 W on Vb1
+          min pwr = -5.80896 uW on Vdd
+
+
+Total Power Dissipation = 5.80896 uW.
+
+
+Licensing Information:
+Lic Summary:
+[15:46:38.152947] Cdslmd servers:5280@cadence
+[15:46:38.152953] Feature usage summary:
+[15:46:38.152953] Virtuoso_Spectre
+
+
+Aggregate audit (3:46:38 PM, Thur Oct 29, 2026):
+Time used: CPU = 90.6 ms, elapsed = 1.58 s, util. = 5.74%.
+Time spent in licensing: elapsed = 1.47 s, percentage of total = 92.8%.
+Peak memory used = 161 Mbytes.
+Simulation started at: 3:46:37 PM, Thur Oct 29, 2026, ended at: 3:46:38 PM, Thur Oct 29, 2026, with elapsed time (wall clock): 1.58 s.
+spectre completes with 0 errors, 1 warning, and 3 notices.
