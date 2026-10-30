@@ -1,0 +1,35 @@
+
+simulator lang=spectre
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=NN
+include "rfc_ota_core.scs"
+
+Vdd (vdd 0) vsource dc=1.8
+Vgnd (gnd 0) vsource dc=0
+
+// Biasing voltages
+parameters vb1_v=1.203 vb2_v=1.273 vb3_v=0.874 vb4_v=0.801 vb5_v=0.752
+Vb1 (vb1 0) vsource dc=vb1_v
+Vb2 (vb2 0) vsource dc=vb2_v
+Vb3 (vb3 0) vsource dc=vb3_v
+Vb4 (vb4 0) vsource dc=vb4_v
+Vb5 (vb5 0) vsource dc=vb5_v
+
+// Negative feedback for DC operating point: voutm -> inp, voutp -> inm
+Lfb1 (voutm inp) inductor l=1G
+Lfb2 (voutp inm) inductor l=1G
+
+// Input common-mode and differential AC excitation
+Vcm_dc (vcm_dc 0) vsource dc=0.9
+CinP (inp vcm_ac_p) capacitor c=1G
+CinM (inm vcm_ac_m) capacitor c=1G
+VacP (vcm_ac_p vcm_dc) vsource dc=0 mag=0.5
+VacM (vcm_ac_m vcm_dc) vsource dc=0 mag=-0.5
+
+CLp (voutp 0) capacitor c=1.0p
+CLm (voutm 0) capacitor c=1.0p
+
+XOTA (inp inm voutp voutm vdd gnd vb1 vb2 vb3 vb4 vb5) rfc_ota
+
+op dc
+ac ac start=0.01 stop=100M dec=20
+save voutp voutm inp inm Vdd:p

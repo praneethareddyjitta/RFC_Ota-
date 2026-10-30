@@ -1,0 +1,874 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.546.isr13 64bit -- 4 Nov 2022
+Copyright (C) 1989-2022 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: STUDENT   Host: vlsi80.vce.ac.in   HostID: 7F0100   PID: 21149
+Memory  available: 21.4873 GB  physical: 33.4027 GB
+Linux   : Rocky Linux release 8.10 (Green Obsidian)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [4265.9] (  6 ),  1 [3733.4] (  7 ),  2 [2700.0] (  8 )
+                 3 [3654.8] (  9 ),  4 [4265.7] ( 10 ),  5 [2700.0] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 29.0 %, 14.9 %, 7.8 %
+Hyperthreading is enabled
+
+
+Simulating `tb_sweep_vb3.scs' on vlsi80.vce.ac.in at 4:14:45 PM, Thur Oct 29, 2026 (process id: 21149).
+Current working directory: /home/STUDENT/Documents/rfc_OTA_Project/netlists
+Command line:
+    /home/install/SPECTRE211/tools.lnx86/bin/spectre -64 -format  \
+        psfascii tb_sweep_vb3.scs -raw ../results/sw_raw =log  \
+        ../results/sw.log
+
+Licensing Information:
+[16:14:45.095657] Configured Lic search path (21.01-s002): 5280@cadence
+
+Licensing Information:
+[16:14:46.397010] Periodic Lic check successful
+
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/tb_sweep_vb3.scs
+Reading file:  /home/install/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Reading file:  /home/STUDENT/Documents/rfc_OTA_Project/netlists/rfc_ota_core.scs
+Time for NDB Parsing: CPU = 41.283 ms, elapsed = 1.51715 s.
+Time accumulated: CPU = 71.801 ms, elapsed = 1.51715 s.
+Peak resident memory used = 143 Mbytes.
+
+Time for Elaboration: CPU = 10.609 ms, elapsed = 10.6449 ms.
+Time accumulated: CPU = 82.451 ms, elapsed = 1.52784 s.
+Peak resident memory used = 152 Mbytes.
+
+
+Time for EDB Visiting: CPU = 546 us, elapsed = 548.84 us.
+Time accumulated: CPU = 83.053 ms, elapsed = 1.52844 s.
+Peak resident memory used = 152 Mbytes.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 28
+            bsim3v3 26    
+          capacitor 2     
+           resistor 2     
+            vsource 9     
+
+Analysis and control statement inventory:
+                 dc 1     
+              sweep 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 1.054 ms, elapsed = 9.233 ms.
+Time accumulated: CPU = 84.135 ms, elapsed = 1.5377 s.
+Peak resident memory used = 155 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*******************************************************
+Sweep Analysis `sw_vb3': vb3_val = (700e-03 -> 900e-03)
+*******************************************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3_dc_op.sweep ...
+
++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 700e-03 (0 %)
++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=0: CPU = 1.349 ms, elapsed = 1.36399 ms.
+Time accumulated: CPU = 85.619 ms, elapsed = 1.5392 s.
+Peak resident memory used = 155 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-000_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-000_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 700e-03 during DC analysis `sw_vb3-000_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 54 iterations.
+DC simulation time: CPU = 1.498 ms, elapsed = 2.774 ms.
+Total time required for dc analysis `sw_vb3-000_dc_op': CPU = 1.532 ms, elapsed = 2.80786 ms, util. = 54.6%.
+Time accumulated: CPU = 89.887 ms, elapsed = 1.54724 s.
+Peak resident memory used = 157 Mbytes.
+
+
++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 710e-03 (5 %)
++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=1: CPU = 55 us, elapsed = 56.0284 us.
+Time accumulated: CPU = 89.964 ms, elapsed = 1.54731 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-001_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-001_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 710e-03 during DC analysis `sw_vb3-001_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 50 iterations.
+DC simulation time: CPU = 1.27 ms, elapsed = 2.49696 ms.
+Total time required for dc analysis `sw_vb3-001_dc_op': CPU = 1.292 ms, elapsed = 2.51603 ms, util. = 51.4%.
+Time accumulated: CPU = 91.391 ms, elapsed = 1.5512 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 720e-03 (10 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=2: CPU = 74 us, elapsed = 73.1945 us.
+Time accumulated: CPU = 91.486 ms, elapsed = 1.5513 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-002_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-002_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 720e-03 during DC analysis `sw_vb3-002_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 47 iterations.
+DC simulation time: CPU = 1.182 ms, elapsed = 2.50006 ms.
+Total time required for dc analysis `sw_vb3-002_dc_op': CPU = 1.207 ms, elapsed = 2.52414 ms, util. = 47.8%.
+Time accumulated: CPU = 92.935 ms, elapsed = 1.55543 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 730e-03 (15 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=3: CPU = 95 us, elapsed = 96.0827 us.
+Time accumulated: CPU = 93.063 ms, elapsed = 1.55556 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-003_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-003_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 730e-03 during DC analysis `sw_vb3-003_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 49 iterations.
+DC simulation time: CPU = 1.337 ms, elapsed = 2.59209 ms.
+Total time required for dc analysis `sw_vb3-003_dc_op': CPU = 1.378 ms, elapsed = 2.63309 ms, util. = 52.3%.
+Time accumulated: CPU = 94.599 ms, elapsed = 1.55971 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 740e-03 (20 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=4: CPU = 46 us, elapsed = 46.0148 us.
+Time accumulated: CPU = 94.664 ms, elapsed = 1.55977 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-004_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-004_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 740e-03 during DC analysis `sw_vb3-004_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 52 iterations.
+DC simulation time: CPU = 1.171 ms, elapsed = 2.47812 ms.
+Total time required for dc analysis `sw_vb3-004_dc_op': CPU = 1.19 ms, elapsed = 2.49696 ms, util. = 47.7%.
+Time accumulated: CPU = 95.973 ms, elapsed = 1.56369 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 750e-03 (25 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=5: CPU = 43 us, elapsed = 42.9153 us.
+Time accumulated: CPU = 96.034 ms, elapsed = 1.56375 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-005_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-005_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 750e-03 during DC analysis `sw_vb3-005_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 52 iterations.
+DC simulation time: CPU = 1.173 ms, elapsed = 2.43783 ms.
+Total time required for dc analysis `sw_vb3-005_dc_op': CPU = 1.194 ms, elapsed = 2.45786 ms, util. = 48.6%.
+Time accumulated: CPU = 97.384 ms, elapsed = 1.56773 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 760e-03 (30 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=6: CPU = 71 us, elapsed = 72.0024 us.
+Time accumulated: CPU = 97.475 ms, elapsed = 1.56782 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-006_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-006_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 760e-03 during DC analysis `sw_vb3-006_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 51 iterations.
+DC simulation time: CPU = 1.305 ms, elapsed = 2.64287 ms.
+Total time required for dc analysis `sw_vb3-006_dc_op': CPU = 1.331 ms, elapsed = 2.66695 ms, util. = 49.9%.
+Time accumulated: CPU = 99.06 ms, elapsed = 1.57206 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 770e-03 (35 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=7: CPU = 81 us, elapsed = 82.016 us.
+Time accumulated: CPU = 99.169 ms, elapsed = 1.57217 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-007_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-007_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 770e-03 during DC analysis `sw_vb3-007_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 47 iterations.
+DC simulation time: CPU = 1.215 ms, elapsed = 2.53606 ms.
+Total time required for dc analysis `sw_vb3-007_dc_op': CPU = 1.243 ms, elapsed = 2.563 ms, util. = 48.5%.
+Time accumulated: CPU = 100.556 ms, elapsed = 1.57616 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 780e-03 (40 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=8: CPU = 45 us, elapsed = 44.8227 us.
+Time accumulated: CPU = 100.62 ms, elapsed = 1.57622 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-008_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-008_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 780e-03 during DC analysis `sw_vb3-008_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 47 iterations.
+DC simulation time: CPU = 1.118 ms, elapsed = 2.37298 ms.
+Total time required for dc analysis `sw_vb3-008_dc_op': CPU = 1.136 ms, elapsed = 2.39015 ms, util. = 47.5%.
+Time accumulated: CPU = 101.867 ms, elapsed = 1.58011 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 790e-03 (45 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=9: CPU = 36 us, elapsed = 36.0012 us.
+Time accumulated: CPU = 101.921 ms, elapsed = 1.58016 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-009_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-009_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 790e-03 during DC analysis `sw_vb3-009_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.228 uA
+Convergence achieved in 47 iterations.
+DC simulation time: CPU = 1.152 ms, elapsed = 2.53797 ms.
+Total time required for dc analysis `sw_vb3-009_dc_op': CPU = 1.17 ms, elapsed = 2.55609 ms, util. = 45.8%.
+Time accumulated: CPU = 103.199 ms, elapsed = 1.58409 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 800e-03 (50 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=10: CPU = 56 us, elapsed = 56.0284 us.
+Time accumulated: CPU = 103.273 ms, elapsed = 1.58416 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-010_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-010_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 800e-03 during DC analysis `sw_vb3-010_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 53 iterations.
+DC simulation time: CPU = 1.244 ms, elapsed = 2.50387 ms.
+Total time required for dc analysis `sw_vb3-010_dc_op': CPU = 1.266 ms, elapsed = 2.5239 ms, util. = 50.2%.
+Time accumulated: CPU = 104.761 ms, elapsed = 1.58814 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 810e-03 (55 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=11: CPU = 136 us, elapsed = 137.091 us.
+Time accumulated: CPU = 104.939 ms, elapsed = 1.5883 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-011_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-011_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 810e-03 during DC analysis `sw_vb3-011_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 52 iterations.
+DC simulation time: CPU = 1.271 ms, elapsed = 2.48504 ms.
+Total time required for dc analysis `sw_vb3-011_dc_op': CPU = 1.297 ms, elapsed = 2.51102 ms, util. = 51.7%.
+Time accumulated: CPU = 106.363 ms, elapsed = 1.59219 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 820e-03 (60 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=12: CPU = 40 us, elapsed = 40.0543 us.
+Time accumulated: CPU = 106.421 ms, elapsed = 1.59224 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-012_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-012_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 820e-03 during DC analysis `sw_vb3-012_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 47 iterations.
+DC simulation time: CPU = 1.06 ms, elapsed = 2.43497 ms.
+Total time required for dc analysis `sw_vb3-012_dc_op': CPU = 1.077 ms, elapsed = 2.45309 ms, util. = 43.9%.
+Time accumulated: CPU = 107.604 ms, elapsed = 1.59612 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 830e-03 (65 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=13: CPU = 37 us, elapsed = 36.9549 us.
+Time accumulated: CPU = 107.659 ms, elapsed = 1.59618 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-013_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-013_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 830e-03 during DC analysis `sw_vb3-013_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 42 iterations.
+DC simulation time: CPU = 1.032 ms, elapsed = 2.32697 ms.
+Total time required for dc analysis `sw_vb3-013_dc_op': CPU = 1.049 ms, elapsed = 2.34509 ms, util. = 44.7%.
+Time accumulated: CPU = 108.825 ms, elapsed = 1.59991 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 840e-03 (70 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=14: CPU = 43 us, elapsed = 44.8227 us.
+Time accumulated: CPU = 108.888 ms, elapsed = 1.59997 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-014_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-014_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 840e-03 during DC analysis `sw_vb3-014_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 50 iterations.
+DC simulation time: CPU = 1.681 ms, elapsed = 2.99597 ms.
+Total time required for dc analysis `sw_vb3-014_dc_op': CPU = 1.703 ms, elapsed = 3.01695 ms, util. = 56.4%.
+Time accumulated: CPU = 110.815 ms, elapsed = 1.60457 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 850e-03 (75 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=15: CPU = 187 us, elapsed = 187.874 us.
+Time accumulated: CPU = 111.048 ms, elapsed = 1.60481 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-015_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-015_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 850e-03 during DC analysis `sw_vb3-015_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 51 iterations.
+DC simulation time: CPU = 1.763 ms, elapsed = 3.11494 ms.
+Total time required for dc analysis `sw_vb3-015_dc_op': CPU = 1.826 ms, elapsed = 3.18408 ms, util. = 57.3%.
+Time accumulated: CPU = 113.144 ms, elapsed = 1.60957 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 860e-03 (80 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=16: CPU = 109 us, elapsed = 108.957 us.
+Time accumulated: CPU = 113.291 ms, elapsed = 1.60972 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-016_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-016_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 860e-03 during DC analysis `sw_vb3-016_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 54 iterations.
+DC simulation time: CPU = 2.171 ms, elapsed = 3.54505 ms.
+Total time required for dc analysis `sw_vb3-016_dc_op': CPU = 2.209 ms, elapsed = 3.582 ms, util. = 61.7%.
+Time accumulated: CPU = 115.68 ms, elapsed = 1.61473 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 870e-03 (85 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=17: CPU = 67 us, elapsed = 67.9493 us.
+Time accumulated: CPU = 115.776 ms, elapsed = 1.61483 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-017_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-017_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 870e-03 during DC analysis `sw_vb3-017_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 47 iterations.
+DC simulation time: CPU = 1.854 ms, elapsed = 3.13997 ms.
+Total time required for dc analysis `sw_vb3-017_dc_op': CPU = 1.882 ms, elapsed = 3.16811 ms, util. = 59.4%.
+Time accumulated: CPU = 117.846 ms, elapsed = 1.61955 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 880e-03 (90 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=18: CPU = 195 us, elapsed = 195.98 us.
+Time accumulated: CPU = 118.097 ms, elapsed = 1.6198 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-018_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-018_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 880e-03 during DC analysis `sw_vb3-018_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 48 iterations.
+DC simulation time: CPU = 1.592 ms, elapsed = 2.92897 ms.
+Total time required for dc analysis `sw_vb3-018_dc_op': CPU = 1.656 ms, elapsed = 2.99501 ms, util. = 55.3%.
+Time accumulated: CPU = 120.018 ms, elapsed = 1.62447 s.
+Peak resident memory used = 157 Mbytes.
+
+
+++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 890e-03 (95 %)
+++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=19: CPU = 104 us, elapsed = 103.951 us.
+Time accumulated: CPU = 120.156 ms, elapsed = 1.62461 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-019_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-019_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 890e-03 during DC analysis `sw_vb3-019_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 55 iterations.
+DC simulation time: CPU = 2.114 ms, elapsed = 3.40295 ms.
+Total time required for dc analysis `sw_vb3-019_dc_op': CPU = 2.149 ms, elapsed = 3.438 ms, util. = 62.5%.
+Time accumulated: CPU = 122.476 ms, elapsed = 1.62954 s.
+Peak resident memory used = 157 Mbytes.
+
+
++++++++++++++++++++++++++++++++++
+sw_vb3: vb3_val = 900e-03 (100 %)
++++++++++++++++++++++++++++++++++
+Time for sw_vb3 itNum=20: CPU = 68 us, elapsed = 68.903 us.
+Time accumulated: CPU = 122.572 ms, elapsed = 1.62963 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************
+DC Analysis `sw_vb3-020_dc_op'
+******************************
+
+Opening the PSFASCII file ../results/sw_raw/sw_vb3-020_dc_op.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at vb3_val = 900e-03 during DC analysis `sw_vb3-020_dc_op', during Sweep analysis `sw_vb3'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd) = 1.8 V
+I: I(Vgnd:p) = 3.227 uA
+Convergence achieved in 45 iterations.
+DC simulation time: CPU = 1.5 ms, elapsed = 2.77686 ms.
+Total time required for dc analysis `sw_vb3-020_dc_op': CPU = 1.526 ms, elapsed = 2.8019 ms, util. = 54.5%.
+Time accumulated: CPU = 124.266 ms, elapsed = 1.6339 s.
+Peak resident memory used = 157 Mbytes.
+
+Total time required for sweep analysis `sw_vb3': CPU = 39.99 ms, elapsed = 97.3921 ms, util. = 41.1%.
+Time accumulated: CPU = 124.531 ms, elapsed = 1.63551 s.
+Peak resident memory used = 157 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[16:14:47.066907] Cdslmd servers:5280@cadence
+[16:14:47.066913] Feature usage summary:
+[16:14:47.066913] Virtuoso_Spectre
+
+
+Aggregate audit (4:14:47 PM, Thur Oct 29, 2026):
+Time used: CPU = 125 ms, elapsed = 1.64 s, util. = 7.66%.
+Time spent in licensing: elapsed = 1.45 s, percentage of total = 88.3%.
+Peak memory used = 158 Mbytes.
+Simulation started at: 4:14:45 PM, Thur Oct 29, 2026, ended at: 4:14:47 PM, Thur Oct 29, 2026, with elapsed time (wall clock): 1.64 s.
+spectre completes with 0 errors, 0 warnings, and 22 notices.

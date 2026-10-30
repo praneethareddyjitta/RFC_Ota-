@@ -1,0 +1,26 @@
+
+simulator lang=spectre
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=NN
+include "rfc_ota_core.scs"
+
+Vdd (vdd 0) vsource dc=1.8
+Vgnd (gnd 0) vsource dc=0
+Vb1 (vb1 0) vsource dc=1.203
+Vb2 (vb2 0) vsource dc=1.273
+Vb4 (vb4 0) vsource dc=0.801
+Vb5 (vb5 0) vsource dc=0.752
+
+parameters vb3_val=0.874
+Vb3 (vb3 0) vsource dc=vb3_val
+
+VinP (inp 0) vsource dc=0.9
+VinM (inm 0) vsource dc=0.9
+CLp (voutp 0) capacitor c=1.0p
+CLm (voutm 0) capacitor c=1.0p
+
+XOTA (inp inm voutp voutm vdd gnd vb1 vb2 vb3 vb4 vb5) rfc_ota
+
+sw_vb3 sweep param=vb3_val start=0.70 stop=0.90 step=0.01 {
+    dc_op dc
+}
+save voutp voutm
